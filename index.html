@@ -16,6 +16,16 @@
 		<header>
 			<nav>
 				<ul>
+					<li>
+						<div class="menu-container" onclick="myFunction(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="menu-contact hidden">
 					<li class="header-images">
 						<!-- linkedin -->
 						<a href="https://www.linkedin.com/in/petercorrea/" target='_blank'><img src="images/linkedin.png" alt=""></a>
@@ -28,12 +38,11 @@
 					</li>
 				</ul>
 
-				<ul>
-					<li><a href="#bio">bio</a></li>
-					<li><a href="#contact">contact</a></li>
-					<li><a href="#projects">projects</a></li>
-					<li><a href="#skills">skills</a></li>
-					<li><a href="#experience">experience</a></li>
+				<ul class="menu-links hidden">
+					<li><a href="#bio" onclick="hideMenu(this)">bio</a></li>
+					<li><a href="#projects" onclick="hideMenu(this)">projects</a></li>
+					<li><a href="#skills" onclick="hideMenu(this)">skills</a></li>
+					<li><a href="#experience" onclick="hideMenu(this)">experience</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -51,20 +60,6 @@
 					<h2>bio</h2>
 					<p class='bio-text'>Originally from South Florida, Peter is based in Denver, Colorado. He spends most of his time developing web applications and machine learning pipelines. He loves coding because it sits on the intersection of abstract thinking, logical comprehension and design. He’s proficient with HTML, CSS, JavaScript, NodeJS, jQuery, React, AJAX, SQL, PostgreSQL, MongoDB.
 					  During his spare time, he’s reading topics in discrete mathematics, information theory, language paradigms, and models of computation. Peter’s current projects include constructing an 8-bit computer as well as development in Lisp and Python. </p>
-
-				</section>
-
-				<section id='contact'>
-					<div class="contact-images-container">
-						<!-- linkedin -->
-						<a href="https://www.linkedin.com/in/petercorrea/"><img src="images/linkedin.png" alt="" class='contact-images'></a>
-						<!-- email -->
-						<a href="mailto:pmcorrea@me.com?subject=Reaching%20out..."><img src="images/email.png" alt="" class='contact-images'></a>
-						<!-- github -->
-						<a href="https://github.com"><img src="images/github.png" alt="" class='contact-images'></a>
-						<!-- medium -->
-						<a href="https://medium.com/@pmcorrea"><img src="images/medium.png" alt="" class='contact-images'></a>
-					</div>
 
 				</section>
 			</div>
@@ -209,5 +204,7 @@
 		<footer>
 		</footer>
 
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js.js"></script>
 	</body>
 </html>
