@@ -216,9 +216,12 @@ header nav ul li a {
 
 @media only screen and (min-width: 799px) {
 
+	nav ul:first-child {
+    display: none;
+  }
+
 	.menu-contact {
 		display: block;
-
 	}
 
 	.menu-links {
@@ -228,6 +231,7 @@ header nav ul li a {
 
 	.menu-container {
 		display: none;
+		width: 0px;
 	}
 	/* Main Sections */
 	* {
@@ -274,24 +278,24 @@ header nav ul li a {
 
 	.header-images img {
 		width: 3vw;
-		margin: 0px 10px;
+		/* margin: 0px 10px; */
 		-webkit-filter: brightness(100%) invert(100%);
 		filter: brightness(100%) invert(100%);
 	}
 
 	header nav ul li {
 		background-color: black;
-		margin: 10px 0;
+		/* margin: 10px 0; */
 	}
 
 	header nav ul li a {
 		font-weight: light;
 		font-family: 'Roboto', sans-serif;
-		line-height: 1.5;
+		/* line-height: 1.5; */
 		color: white;
 		font-size: .5rem;
 		text-decoration: none;
-		margin: 0px 10px;
+		margin: 10px 10px;
 		padding: 0px 0px;
 	}
 
@@ -331,7 +335,6 @@ header nav ul li a {
 		filter: grayscale(95%);
 	}
 
-
 	.project_cover {
 		width: 70vw;
 		margin: 40px auto;
@@ -354,7 +357,6 @@ header nav ul li a {
 		justify-content: space-between;
 		align-items: center;
 	}
-
 
 	/* Text */
 	h1 {
