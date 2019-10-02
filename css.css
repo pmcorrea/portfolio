@@ -31,6 +31,7 @@
 /* Main Sections */
 * {
 	box-sizing: border-box;
+	max-width: 1024px;
 }
 
 html {
@@ -38,12 +39,18 @@ html {
 }
 
 body {
-	padding: 0vh 10vw 10vw;
-	background-color: white;
+
 }
 
 main {
-
+	padding: 0vh 10vw 10vw;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	max-width: 100vw;
 }
 
 section {
@@ -115,9 +122,18 @@ h4 {
 }
 
 #banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	font-size: 3rem;
-	margin: 10vh 0;
+	margin: 0;
 	color: black;
+	height: 100vh;
+	max-height: 100vh;
+}
+
+#bio h2 {
+	padding-top: 100px;
 }
 
 nav {
@@ -209,6 +225,7 @@ header nav ul li a {
 
 .row_skills img {
 	width: 15vw;
+	max-width: 80px;
 	margin: 5vw;
 	-webkit-filter: grayscale(95%); /* Safari */
 	filter: grayscale(95%);
@@ -217,8 +234,8 @@ header nav ul li a {
 @media only screen and (min-width: 799px) {
 
 	nav ul:first-child {
-    display: none;
-  }
+    	display: none;
+  	}
 
 	.menu-contact {
 		display: block;
@@ -330,6 +347,7 @@ header nav ul li a {
 
 	.row_skills img {
 		width: 10vw;
+		max-width: 80px;
 		margin: 2vw;
 		-webkit-filter: grayscale(95%); /* Safari */
 		filter: grayscale(95%);
@@ -421,6 +439,10 @@ header nav ul li a {
 }
 
 @media only screen and (min-width: 1024px) {
+
+	nav ul:first-child {
+    	display: none;
+  	}
 
 	/* Main Sections */
 	* {
@@ -533,6 +555,7 @@ header nav ul li a {
 
 	.row_skills img {
 		width: 7vw;
+		max-width: 80px;
 		margin: 2vw;
 		-webkit-filter: grayscale(95%); /* Safari */
 		filter: grayscale(95%);
