@@ -404,7 +404,7 @@ header nav ul li a {
 	}
 
 	.menu-links>li>a {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
 	.menu-container {
@@ -435,6 +435,7 @@ header nav ul li a {
 
 	.header-images img {
 		width: 3vw;
+		max-width: 30px;
 		/* margin: 0px 10px; */
 		-webkit-filter: brightness(100%) invert(100%);
 		filter: brightness(100%) invert(100%);
