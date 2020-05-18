@@ -8,7 +8,8 @@
 		<meta name="author" content="Peter Correa">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Archivo+Black%7CPrompt%7CRoboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet">
 		<link rel="stylesheet" href="css.css">
 		<title>Peter Correa</title>
 	</head>
@@ -16,7 +17,7 @@
 		<header>
 			<nav>
 				<ul>
-					<li>
+					<li class="menu-primary-container">
 						<div class="menu-container" onclick="showNavMenu(this)">
 							<div class="bar1"></div>
 							<div class="bar2"></div>
@@ -27,10 +28,11 @@
 
 				<ul class="menu-contact hidden">
 					<li class="header-images">
-						<!-- linkedin -->
-						<a href="https://www.linkedin.com/in/petercorrea/" target='_blank'><img src="images/linkedin.png" alt=""></a>
 						<!-- email -->
 						<a href="mailto:pmcorrea@me.com?subject=Reaching%20out..."><img src="images/email.png" alt=""></a>
+						<!-- linkedin -->
+						<a href="https://www.linkedin.com/in/petercorrea/" target='_blank'><img src="images/linkedin.png" alt=""></a>
+					
 						<!-- github -->
 						<a href="https://github.com/pmcorrea" target='_blank'><img src="images/github.png" alt="" ></a>
 						<!-- medium -->
@@ -55,36 +57,208 @@
 			</div>
 
 
-			<div>
-				<section id='bio'>
-					<h2>bio</h2>
-					<p class='bio-text'>Originally from South Florida, Peter is based in Denver, Colorado. He spends most of his time developing web applications and machine learning pipelines. He loves coding because it sits on the intersection of abstract thinking, logical comprehension and design. He’s proficient with HTML, CSS, JavaScript, NodeJS, jQuery, React, AJAX, SQL, PostgreSQL, MongoDB.
-					  During his spare time, he’s reading topics in discrete mathematics, information theory, language paradigms, and models of computation. Peter’s current projects include constructing an 8-bit computer as well as development in Lisp and Python. </p>
 
-				</section>
-			</div>
+			<section id='bio'>
+				<h2>bio</h2>
+				<p class='bio-text'>Based in Miami, Florida, Peter spends his time developing web applications. He enjoys coding because it sits on the intersection of abstract thinking, logical comprehension and design. His stack normally includes HTML, CSS, JavaScript, React, NodeJS, Express, PostgreSQL, MongoDB, and GraphQL.
+					During spare time Peter enjoys reading up on computer science, dev ops, information theory, language paradigms, and models of computation. Current projects include Centr: the minimal social app, and Strides: A companion for better habits.</p>
 
+			</section>
+			
 			<section id='projects'>
-				<div class="">
-					<h2>projects</h2>
-					<img src="images/got_quiz_cover.png" alt="" class='project_cover'>
-					<p class='title'>Game of Thrones Trivial</p>
-					<a href="https://github.com/pmcorrea/GOT-Quiz" class='app_links' target="_blank">GitHub Link</a>
-					<a href="https://pmcorrea.github.io/GOT-Quiz/" class='app_links' target="_blank">App Link</a>
+				<h2>projects</h2>
+
+				<!-- Centr Landing -->
+				<div class="project-container">
+					<div class="main-container">
+						<div class="image-container strides-container">
+							<div class="image-count"><p>1 / 7</p></div>
+							<img class="image-splash" src="strides/1.png"></img>
+						</div>
+
+						<div class="image-container strides-container">
+							<div class="image-count"><p>2 / 7</p></div>
+							<img class="image-splash" src="strides/2.png"></img>
+						</div>
+
+						<div class="image-container strides-container">
+							<div class="image-count"><p>3 / 7</p></div>
+							<img class="image-splash" src="strides/3.png"></img>
+						</div>
+
+						<div class="image-container strides-container">
+							<div class="image-count"><p>4 / 7</p></div>
+							<img class="image-splash" src="strides/4.png"></img>
+						</div>
+
+						<div class="image-container strides-container">
+							<div class="image-count"><p>5 / 7</p></div>
+							<img class="image-splash" src="strides/5.png"></img>
+						</div>
+
+						<div class="image-container strides-container">
+							<div class="image-count"><p>6 / 7</p></div>
+							<img class="image-splash" src="strides/6.png"></img>
+						</div>
+
+						<div class="image-container strides-container">
+							<div class="image-count">
+								<p>7 / 7</p>
+							</div>
+							<img class="image-splash" src="strides/7.png"></img>
+						</div>
+					
+						<a class="prev" onclick="changeImg(-1)"> < </a>
+						<a class="next" onclick="changeImg(1)"> > </a>
+
+						<div class="dots-container">
+							<span class="dot stridesDot" onclick="selectImg(0)"></span>
+							<span class="dot stridesDot" onclick="selectImg(1)"></span>
+							<span class="dot stridesDot" onclick="selectImg(2)"></span>
+							<span class="dot stridesDot" onclick="selectImg(3)"></span>
+							<span class="dot stridesDot" onclick="selectImg(4)"></span>
+							<span class="dot stridesDot" onclick="selectImg(5)"></span>
+							<span class="dot stridesDot" onclick="selectImg(6)"></span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<p class='title'>Strides</p>
+						
+						<p>Strides is a friendly companion for tracking and building better habits.Strides was developed using React, NodeJS, GraphQL and Postgres. Deployment tools included Vercel and Heroku. Other
+						notable tools and libraries include: React Hooks, Router and Context, Apollo, and Express. Testing was faciliated using
+						Testing Library, Chai, and Mocha. Security considerations included implementing a JWT authorization system with expiring
+						tokens, hashing/salting passwords with bcrypt, sanitizing input with XSS, and CORS for secured headers.</p>
+						
+						<div>
+							<a href="https://strides.now.sh/" class='app_links' target="_blank">Live App</a>
+							<a href="https://github.com/pmcorrea/strides-client" class='app_links' target="_blank">Client Link</a>
+							<a href="https://github.com/pmcorrea/strides-server" class='app_links' target="_blank">API Link</a>
+						</div>
+					</div>
 				</div>
 
-				<div class="">
-					<img src="images/dark-landing-page-cover.png" alt="" class='project_cover'>
-					<p class='title'>Generic Dark Landing Page</p>
-					<a href="https://github.com/pmcorrea/Dark-Landing-Page" class='app_links' target="_blank">GitHub Link</a>
-					<a href="https://pmcorrea.github.io/Dark-Landing-Page/" class='app_links' target="_blank">App Link</a>
+				<!-- Centr -->
+				<div class="project-container">
+					<div class="main-container">
+						<div class="image-container centr-container">
+							<div class="image-count">
+								<p>1 / 5</p>
+							</div>
+							<img class="image-splash" src="centr/1.png"></img>
+						</div>
+				
+						<div class="image-container centr-container">
+							<div class="image-count">
+								<p>2 / 5</p>
+							</div>
+							<img class="image-splash" src="centr/2.png"></img>
+						</div>
+				
+						<div class="image-container centr-container">
+							<div class="image-count">
+								<p>3 / 5</p>
+							</div>
+							<img class="image-splash" src="centr/3.png"></img>
+						</div>
+				
+						<div class="image-container centr-container">
+							<div class="image-count">
+								<p>4 / 5</p>
+							</div>
+							<img class="image-splash" src="centr/4.png"></img>
+						</div>
+				
+						<div class="image-container centr-container">
+							<div class="image-count">
+								<p>5 / 5</p>
+							</div>
+							<img class="image-splash" src="centr/5.png"></img>
+						</div>
+				
+						<a class="prev" onclick="changeImgCentr(-1)">
+							< </a>
+								<a class="next" onclick="changeImgCentr(1)"> > </a>
+				
+								<div class="dots-container">
+									<span class="dot centrDot" onclick="selectImgCentr(0)"></span>
+									<span class="dot centrDot" onclick="selectImgCentr(1)"></span>
+									<span class="dot centrDot" onclick="selectImgCentr(2)"></span>
+									<span class="dot centrDot" onclick="selectImgCentr(3)"></span>
+									<span class="dot centrDot" onclick="selectImgCentr(4)"></span>
+								</div>
+					</div>
+				
+					<div class="project-links">
+						<p class='title'>Centr</p>
+				
+						<p>Centr is a minimal social app for users bogged down by content driven platforms. Center allows users to sign up, create and organize posts,
+							discover users, and connect with others. Built with React, React Router, NodeJS, Express, Knex, and Postgres.Testing was faciliated using
+							Testing Library, Chai, and Mocha. Security considerations included implementing a JWT authorization system with expiring
+							tokens, hashing/salting passwords with bcrypt, sanitizing input with XSS, and CORS for secured headers.
+						</p>
+				
+						<div>
+							<a href="https://centr.now.sh/" class='app_links' target="_blank">Live App</a>
+							<a href="https://github.com/pmcorrea/centr-client" class='app_links' target="_blank">Client Link</a>
+							<a href="https://github.com/pmcorrea/centr-server" class='app_links' target="_blank">API Link</a>
+						</div>
+					</div>
 				</div>
-
-				<div class="">
-					<img src="images/give-me-the-deets.png" alt="" class='project_cover'>
-					<p class='title'>Give Me The Deets</p>
-					<a href="https://github.com/pmcorrea/give-me-the-deets" class='app_links' target="_blank">GitHub Link</a>
-					<a href="https://pmcorrea.github.io/give-me-the-deets/" class='app_links' target="_blank">App Link</a>
+				
+				<!-- Dark Landing -->
+				<div class="project-container">
+					<div class="main-container">
+						<div class="image-container dark-landing-container">
+							<div class="image-count">
+								<p>1 / 4</p>
+							</div>
+							<img class="image-splash" src="dark_landing/1.png"></img>
+						</div>
+				
+						<div class="image-container dark-landing-container">
+							<div class="image-count">
+								<p>2 / 4</p>
+							</div>
+							<img class="image-splash" src="dark_landing/2.png"></img>
+						</div>
+				
+						<div class="image-container dark-landing-container">
+							<div class="image-count">
+								<p>3 / 4</p>
+							</div>
+							<img class="image-splash" src="dark_landing/3.png"></img>
+						</div>
+				
+						<div class="image-container dark-landing-container">
+							<div class="image-count">
+								<p>4 / 4</p>
+							</div>
+							<img class="image-splash" src="dark_landing/4.png"></img>
+						</div>
+				
+						<a class="prev" onclick="changeImgDarkLanding(-1)">
+							< </a>
+								<a class="next" onclick="changeImgDarkLanding(1)"> > </a>
+				
+								<div class="dots-container">
+									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(0)"></span>
+									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(1)"></span>
+									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(2)"></span>
+									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(3)"></span>
+								</div>
+					</div>
+				
+					<div class="project-links">
+						<p class='title'>Flyo Landing Page</p>
+				
+						<p>A generic landing page for a Dropbox like product Flyo. Built with vanilla JavaScript, CSS, and HTML. </p>
+				
+						<div>
+							<a href="https://pmcorrea.github.io/Dark-Landing-Page/" class='app_links' target="_blank">Live App</a>
+							<a href="https://github.com/pmcorrea/Dark-Landing-Page/" class='app_links' target="_blank">Client Link</a>
+						</div>
+					</div>
 				</div>
 
 			</section>
@@ -95,6 +269,8 @@
 					<img src="images/js.png" alt="">
 					<img src="images/html.svg" alt="">
 					<img src="images/css.png" alt="">
+					<img src="images/react.png" alt="">
+					<img src="images/nodejs.png" alt="">
 					<img src="images/git.png" alt="">
 					<img src="images/jquery.svg" alt="">
 					<img src="images/bootstrap.png" alt="">
@@ -105,25 +281,19 @@
 					<img src="images/pandas.png" alt="">
 					<img src="images/numpy.png" alt="">
 					<img src="images/matplotlib.png" alt="">
-
-					<img src="images/terminal.png" alt="">
-					<img src="images/react.png" alt="">
-					<img src="images/nodejs.png" alt="">
-					<img src="images/atom.png" alt="">
 				</div>
 
 			</section>
 
 			<section id='experience'>
 				<h2>experience</h2>
-
 				<ul>
 					<li>
-						<h3>Thinkful</h3>
+						<h3 class="first-experiance">Thinkful</h3>
 						<h4>Full Stack Developer Graduate</h4>
 						<h4>Denver, CO.</h4>
 						<h4>Aug, 2019</h4>
-						<p class='informational'>Architect, code and deploy full stack web applications. Debug cross-browser compatibility. Implement accessibility best practices. Develop customer-focused and scalable user experiences. Develop, manage, and test web applications and REST APIs. Utilize code versioning best practices. Build applications on NodeJS, React and Postgres.</p>
+						<p class="informational">Architect, code and deploy full stack web applications. Debug cross-browser compatibility. Implement accessibility best practices. Develop customer-focused and scalable user experiences. Develop, manage, and test web applications and REST APIs. Utilize code versioning best practices. Build applications on NodeJS, React and Postgres.</p>
 					</li>
 
 					<li>
@@ -131,45 +301,39 @@
 						<h4>Data Scientist Graduate</h4>
 						<h4>Denver, CO.</h4>
 						<h4>Jun 2019</h4>
-
-						<p class='informational'>27+ certifications in data science, machine learning, statistical inference, software development and more. Develop data science skills through self-guided projects and lectures. Parse, clean and transform large datasets. Query relational databases by executing SQL code. Log, debug, and test code; ensure sufficient coverage. Adhere to conventional software development practices, documentation and version control. Leverage parallel computer with PySpark. Apply dimensional reduction and imputation techniques to large datasets. Utilize supervised and unsupervised techniques. Build reports, dashboards, and visualizations with matplotlib, Seaborn, Bokeh, and Tableau. </p>
+						<p class="informational">27+ certifications in data science, machine learning, statistical inference, software development and more. Develop data science skills through self-guided projects and lectures. Parse, clean and transform large datasets. Query relational databases by executing SQL code. Log, debug, and test code; ensure sufficient coverage. Adhere to conventional software development practices, documentation and version control. Leverage parallel computer with PySpark. Apply dimensional reduction and imputation techniques to large datasets. Utilize supervised and unsupervised techniques. Build reports, dashboards, and visualizations with matplotlib, Seaborn, Bokeh, and Tableau. </p>
 					</li>
 
 					<li>
 						<h3>Target</h3>
 						<h4>Senior Manager</h4>
-						<h4  >Hollywood, FL.</h4>
-						<h4  >Jul 2016</h4>
-
-						<p class='informational'>Lead a sales-driven culture in a high energy, fun, fast-paced environment. Improved store operations while meeting sales targets. Mitigated the company's exposure to risks of brick-and-motor ops and online retail. Selected by senior leadership for accelerated development program. Reduced liability from compliance and regulatory processes. Facilitated professional development and training to new-in-role managers.</p>
-						<!-- <p class='bullet'>- Lead and talent manage a team of 5 direct reports</p> -->
+						<h4>Hollywood, FL.</h4>
+						<h4>Jul 2016</h4>
+						<p class="informational">Lead a sales-driven culture in a high energy, fun, fast-paced environment. Improved store operations while meeting sales targets. Mitigated the company's exposure to risks of brick-and-motor ops and online retail. Selected by senior leadership for accelerated development program. Reduced liability from compliance and regulatory processes. Facilitated professional development and training to new-in-role managers.</p>
 					</li>
 
 					<li>
 						<h3>Target</h3>
 						<h4>Manager</h4>
-						<h4  >Miramar, FL.</h4>
-						<h4  >Jan 2015</h4>
-
-						<p class='informational'>Managed a big box retailer generating $45M of annual volume; achieved YoY growth of 3.2%. Managed and developed 5 direct reports, leading to three next level promotions. Analyzed financial, logistical, and operational reporting to problem solve issues. Project managed specialized teams in product pricing, operations, merchandising and sales. Facilitated training of new-in-role executives and leaders. Achieved highest favorability on the annual store survey that measures employee morale, engagement, and intent to stay</p>
+						<h4>Miramar, FL.</h4>
+						<h4>Jan 2015</h4>
+						<p class="informational">Managed a big box retailer generating $45M of annual volume; achieved YoY growth of 3.2%. Managed and developed 5 direct reports, leading to three next level promotions. Analyzed financial, logistical, and operational reporting to problem solve issues. Project managed specialized teams in product pricing, operations, merchandising and sales. Facilitated training of new-in-role executives and leaders. Achieved highest favorability on the annual store survey that measures employee morale, engagement, and intent to stay</p>
 					</li>
 
 					<li>
-						<h3>FIU</h3>
-						<h4>Mentor</h4>
-						<h4  >Miami, FL.</h4>
-						<h4  >Jul 2014</h4>
-
-						<p class='informational'>Organize lectures, create content, and proctor exams for pre-medical/Biology II students. Mentor groups of 60+ individuals through guided teaching and group discussions. Weekly meetings with faculty and academic professionals to present action plans and results. Exercised active learning pedagogies and proximity of learning techniques.</p>
+						<h3>Florida International University</h3>
+						<h4>Biological Science Mentor</h4>
+						<h4>Miami, FL.</h4>
+						<h4>Jul 2014</h4>
+						<p class="informational">Organize lectures, create content, and proctor exams for pre-medical/Biology II students. Mentor groups of 60+ individuals through guided teaching and group discussions. Weekly meetings with faculty and academic professionals to present action plans and results. Exercised active learning pedagogies and proximity of learning techniques.</p>
 					</li>
 
 					<li>
 						<h3>Apple</h3>
 						<h4>Technical Specialist</h4>
-						<h4  >Aventura, FL.</h4>
-						<h4  >Mar 2012</h4>
-
-						<p class='informational'>The first point of contact to proactively qualify opportunities and potential solution fit. Prospect to grow the sales pipeline by identifying and growing key business accounts. Establish rapport with directors, business owners, and decision makers. Discover pain points and effectively communicate the value of solutions. Meet and exceed monthly forecasts and expectations. Facilitate one-to-one sessions, and organized lectures to business professionals, corporate executives, and freelancers</p>
+						<h4>Aventura, FL.</h4>
+						<h4>Mar 2012</h4>
+						<p class="informational">The first point of contact to proactively qualify opportunities and potential solution fit. Prospect to grow the sales pipeline by identifying and growing key business accounts. Establish rapport with directors, business owners, and decision makers. Discover pain points and effectively communicate the value of solutions. Meet and exceed monthly forecasts and expectations. Facilitate one-to-one sessions, and organized lectures to business professionals, corporate executives, and freelancers</p>
 					</li>
 				</ul>
 
@@ -180,6 +344,8 @@
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="js.js"></script>
+		<script src="strides.js"></script>
+		<script src="centr.js"></script>
+		<script src="dark_landing.js"></script>
 	</body>
 </html>
