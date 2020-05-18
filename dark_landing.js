@@ -10,7 +10,6 @@ function changeImgDarkLanding(n) {
   // If the new index is greater than the last idx
   if (newIdx > last_idx) {
     imgIdxDarkLanding = 0
-    console.log('1', imgIdxDarkLanding)
     showImgDarkLanding()
     return
   }
@@ -18,13 +17,11 @@ function changeImgDarkLanding(n) {
   // If the new index is less than the first idx
   if (newIdx < 0) {
     imgIdxDarkLanding = last_idx
-    console.log('2', imgIdxDarkLanding)
     showImgDarkLanding()
     return
   }
 
   imgIdxDarkLanding = newIdx
-  console.log('3', imgIdxDarkLanding)
   showImgDarkLanding()
   return
 }

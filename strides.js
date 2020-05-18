@@ -29,7 +29,6 @@ function changeImg(n) {
   // If the new index is greater than the last idx
   if (newIdx > last_idx) {
     imgIdx = 0
-    console.log('1', imgIdx)
     showImg()
     return
   }
@@ -37,13 +36,11 @@ function changeImg(n) {
   // If the new index is less than the first idx
   if (newIdx < 0) {
     imgIdx = last_idx
-    console.log('2', imgIdx)
     showImg()
     return
   }
 
   imgIdx = newIdx
-  console.log('3', imgIdx)
   showImg()
   return
 }

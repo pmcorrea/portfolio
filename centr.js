@@ -11,7 +11,6 @@ function changeImgCentr(n) {
   // If the new index is greater than the last idx
   if (newIdx > last_idx) {
     imgIdxCentr = 0
-    console.log('1', imgIdxCentr)
     showImgCentr()
     return
   }
@@ -19,13 +18,11 @@ function changeImgCentr(n) {
   // If the new index is less than the first idx
   if (newIdx < 0) {
     imgIdxCentr = last_idx
-    console.log('2', imgIdxCentr)
     showImgCentr()
     return
   }
 
   imgIdxCentr = newIdx
-  console.log('3', imgIdxCentr)
   showImgCentr()
   return
 }
