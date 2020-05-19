@@ -75,7 +75,7 @@
 			<section id='projects'>
 				<h2>projects</h2>
 
-				<!-- Centr Landing -->
+				<!-- Strides -->
 				<div class="project-container">
 					<div class="main-container">
 						<div class="image-container strides-container">
@@ -115,17 +115,17 @@
 							<img class="image-splash" src="strides/7.png"></img>
 						</div>
 					
-						<a class="prev" onclick="changeImg(-1)"> < </a>
-						<a class="next" onclick="changeImg(1)"> > </a>
+						<a class="prev" onclick="changeImgStrides(-1, 'strides-container', 'stridesDot')"> < </a>
+						<a class="next" onclick="changeImgStrides(1 , 'strides-container', 'stridesDot')"> > </a>
 
 						<div class="dots-container">
-							<span class="dot stridesDot" onclick="selectImg(0)"></span>
-							<span class="dot stridesDot" onclick="selectImg(1)"></span>
-							<span class="dot stridesDot" onclick="selectImg(2)"></span>
-							<span class="dot stridesDot" onclick="selectImg(3)"></span>
-							<span class="dot stridesDot" onclick="selectImg(4)"></span>
-							<span class="dot stridesDot" onclick="selectImg(5)"></span>
-							<span class="dot stridesDot" onclick="selectImg(6)"></span>
+							<span class="dot stridesDot" onclick="displayImg(0, 'strides-container', 'stridesDot')"></span>
+							<span class="dot stridesDot" onclick="displayImg(1, 'strides-container', 'stridesDot')"></span>
+							<span class="dot stridesDot" onclick="displayImg(2, 'strides-container', 'stridesDot')"></span>
+							<span class="dot stridesDot" onclick="displayImg(3, 'strides-container', 'stridesDot')"></span>
+							<span class="dot stridesDot" onclick="displayImg(4, 'strides-container', 'stridesDot')"></span>
+							<span class="dot stridesDot" onclick="displayImg(5, 'strides-container', 'stridesDot')"></span>
+							<span class="dot stridesDot" onclick="displayImg(6, 'strides-container', 'stridesDot')"></span>
 						</div>
 					</div>
 
@@ -183,16 +183,16 @@
 							<img class="image-splash" src="centr/5.png"></img>
 						</div>
 				
-						<a class="prev" onclick="changeImgCentr(-1)">
+						<a class="prev" onclick="changeImgCentr(-1, 'centr-container', 'centrDot')">
 							< </a>
-								<a class="next" onclick="changeImgCentr(1)"> > </a>
+								<a class="next" onclick="changeImgCentr(1, 'centr-container', 'centrDot')"> > </a>
 				
 								<div class="dots-container">
-									<span class="dot centrDot" onclick="selectImgCentr(0)"></span>
-									<span class="dot centrDot" onclick="selectImgCentr(1)"></span>
-									<span class="dot centrDot" onclick="selectImgCentr(2)"></span>
-									<span class="dot centrDot" onclick="selectImgCentr(3)"></span>
-									<span class="dot centrDot" onclick="selectImgCentr(4)"></span>
+									<span class="dot centrDot" onclick="selectdisplayImgImgCentr(0), 'centr-container', 'centrDot' "></span>
+									<span class="dot centrDot" onclick="displayImg(1, 'centr-container', 'centrDot') "></span>
+									<span class="dot centrDot" onclick="displayImg(2, 'centr-container', 'centrDot') "></span>
+									<span class="dot centrDot" onclick="displayImg(3, 'centr-container', 'centrDot') "></span>
+									<span class="dot centrDot" onclick="displayImg(4, 'centr-container', 'centrDot') "></span>
 								</div>
 					</div>
 				
@@ -244,15 +244,15 @@
 							<img class="image-splash" src="dark_landing/4.png"></img>
 						</div>
 				
-						<a class="prev" onclick="changeImgDarkLanding(-1)">
+						<a class="prev" onclick="changeImgDarkLanding(-1, 'dark-landing-container', 'darkLandingDot')">
 							< </a>
-								<a class="next" onclick="changeImgDarkLanding(1)"> > </a>
+								<a class="next" onclick="changeImgDarkLanding(1, 'dark-landing-container', 'darkLandingDot')"> > </a>
 				
 								<div class="dots-container">
-									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(0)"></span>
-									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(1)"></span>
-									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(2)"></span>
-									<span class="dot darkLandingDot" onclick="selectImgDarkLanding(3)"></span>
+									<span class="dot darkLandingDot" onclick="displayImg(0, 'dark-landing-container', 'darkLandingDot')"></span>
+									<span class="dot darkLandingDot" onclick="displayImg(1, 'dark-landing-container', 'darkLandingDot')"></span>
+									<span class="dot darkLandingDot" onclick="displayImg(2, 'dark-landing-container', 'darkLandingDot')"></span>
+									<span class="dot darkLandingDot" onclick="displayImg(3, 'dark-landing-container', 'darkLandingDot')"></span>
 								</div>
 					</div>
 				
@@ -357,10 +357,6 @@
 
 		<footer>
 		</footer>
-
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="strides.js"></script>
-		<script src="centr.js"></script>
-		<script src="dark_landing.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
