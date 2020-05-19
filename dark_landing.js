@@ -1,5 +1,6 @@
 let imgIdxDarkLanding = 0;
 showImgDarkLanding();
+// Some comment
 
 function changeImgDarkLanding(n) {
   // Find the total number of imgs
