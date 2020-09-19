@@ -382,7 +382,7 @@ header nav ul li a {
 .photos-container {
 	display: grid;
 	width: 100%;
-	grid-template-columns: 300px;
+	grid-template-columns: 1fr;
 	grid-template-rows: 300px 300px 300px;
 	justify-content: space-evenly;
 	align-items: center;
@@ -632,8 +632,8 @@ img[src="./images/Compressed/picture99.jpeg"] {
 	.photos-container {
 		display: grid;
 		width: 100%;
-		grid-template-columns: 200px 200px 200px;
-		grid-template-rows: 200px 200px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 300px 300px;
 		justify-content: space-evenly;
 		align-items: center;
 
