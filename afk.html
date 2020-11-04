@@ -1,92 +1,66 @@
-<!-- Check if portfolio.html works vs index.html -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Peter Correa-Full Stack Developer" />
-		<meta
-			name="keywords"
-			content="HTML,CSS,JavaScript,Fullstack Developer"
-		/>
-		<meta name="author" content="Peter Correa" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css.css" />
-		<title>Peter Correa</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li class="menu-primary-container">
-						<div class="menu-container" onclick="showNavMenu(this)">
-							<div class="bar1"></div>
-							<div class="bar2"></div>
-							<div class="bar3"></div>
-						</div>
-					</li>
-				</ul>
 
-				<ul class="menu-contact hidden">
-					<li class="header-images">
-						<!-- email -->
-						<a
-							href="mailto:pmcorrea@me.com?subject=Reaching%20out..."
-							><img src="images/email.png" alt=""
-						/></a>
-						<!-- linkedin -->
-						<a
-							href="https://www.linkedin.com/in/petercorrea/"
-							target="_blank"
-							><img src="images/linkedin.png" alt=""
-						/></a>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Peter Correa-Full Stack Developer" />
+	<meta name="keywords" content="HTML,CSS,JavaScript,Fullstack Developer" />
+	<meta name="author" content="Peter Correa" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css.css" />
+	<title>Peter Correa</title>
+</head>
 
-						<!-- github -->
-						<a href="https://github.com/pmcorrea" target="_blank"
-							><img src="images/github.png" alt=""
-						/></a>
-						<!-- medium -->
-						<a href="https://medium.com/@pmcorrea" target="_blank"
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="mobile-menu">
+					<div class="mobile-menu-container" onclick="showNavMenu(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="menu-contact hidden">
+				<li class="contact-images">
+					<!-- email -->
+					<a href="mailto:pmcorrea@me.com?subject=Reaching%20out..."><img src="images/email.png" alt="" /></a>
+					<!-- linkedin -->
+					<a href="https://www.linkedin.com/in/petercorrea/" target="_blank"><img src="images/linkedin.png"
+							alt="" /></a>
+
+					<!-- github -->
+					<a href="https://github.com/pmcorrea" target="_blank"><img src="images/github.png" alt="" /></a>
+					<!-- medium -->
+					<!-- <a href="https://medium.com/@pmcorrea" target="_blank"
 							><img src="images/medium.png" alt=""
-						/></a>
-					</li>
-				</ul>
+						/></a> -->
+				</li>
+			</ul>
 
-				<ul class="menu-links hidden">
-					<li>
-						<a href="./index.html#bio" onclick="hideMenu(this)"
-							>bio</a
-						>
-					</li>
-					<li>
-						<a href="./index.html#projects" onclick="hideMenu(this)"
-							>projects</a
-						>
-					</li>
-					<li>
-						<a href="./index.html#skills" onclick="hideMenu(this)"
-							>skills</a
-						>
-					</li>
-					<li>
-						<a href="index.html#experience" onclick="hideMenu(this)"
-							>experience</a
-						>
-					</li>
-
-					<li>
-						<a href="#" onclick="hideMenu(this)">afk</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+			<ul class="menu-links hidden">
+				<li><a href="#bio" onclick="hideMenu(this)">bio</a></li>
+				<li>
+					<a href="#projects" onclick="hideMenu(this)">projects</a>
+				</li>
+				<li>
+					<a href="#skills" onclick="hideMenu(this)">skills</a>
+				</li>
+				<li>
+					<a href="index.html#experience" onclick="hideMenu(this)">experience</a>
+				</li>
+				<li>
+					<a href="afk.html" onclick="hideMenu(this)">afk</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
 		<main>
 			<div class="photos-container photo-layout-1">
