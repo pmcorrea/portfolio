@@ -25,8 +25,8 @@
 		<header>
 			<nav>
 				<ul>
-					<li class="menu-primary-container">
-						<div class="menu-container" onclick="showNavMenu(this)">
+					<li class="mobile-menu">
+						<div class="mobile-menu-container" onclick="showNavMenu(this)">
 							<div class="bar1"></div>
 							<div class="bar2"></div>
 							<div class="bar3"></div>
@@ -35,7 +35,7 @@
 				</ul>
 
 				<ul class="menu-contact hidden">
-					<li class="header-images">
+					<li class="contact-images">
 						<!-- email -->
 						<a
 							href="mailto:pmcorrea@me.com?subject=Reaching%20out..."
@@ -53,9 +53,9 @@
 							><img src="images/github.png" alt=""
 						/></a>
 						<!-- medium -->
-						<a href="https://medium.com/@pmcorrea" target="_blank"
+						<!-- <a href="https://medium.com/@pmcorrea" target="_blank"
 							><img src="images/medium.png" alt=""
-						/></a>
+						/></a> -->
 					</li>
 				</ul>
 
@@ -83,7 +83,7 @@
 
 		<main>
 			<div id="banner">
-				<h1>Hello,</h1>
+				<h1>Hi,</h1>
 				<h1>I'm Peter.</h1>
 			</div>
 
@@ -127,7 +127,7 @@
 
 				<!-- Strides -->
 				<div class="project-container">
-					<div class="main-container">
+					<div class="project-screenshots">
 						<div class="image-container strides-container">
 							<div class="image-count"><p>1 / 7</p></div>
 							<img
@@ -280,7 +280,7 @@
 
 				<!-- Centr -->
 				<div class="project-container">
-					<div class="main-container">
+					<div class="project-screenshots">
 						<div class="image-container centr-container">
 							<div class="image-count">
 								<p>1 / 5</p>
@@ -414,7 +414,7 @@
 
 				<!-- Dark Landing -->
 				<div class="project-container">
-					<div class="main-container">
+					<div class="project-screenshots">
 						<div class="image-container dark-landing-container">
 							<div class="image-count">
 								<p>1 / 4</p>
@@ -550,11 +550,66 @@
 			<section id="experience">
 				<h2>experience</h2>
 				<ul class="flex-container">
-					<li class="flex-item">
-						<h3 class="first-experiance">Thinkful</h3>
-						<h4>Full Stack Developer Graduate</h4>
-						<h4>Denver, CO.</h4>
-						<h4>Aug, 2019</h4>
+					<li class="experiance-item">
+						<div class="flex-row">
+							<div>
+								<h3>Software Engineer</h3>
+								<div class="skill-badge-container">
+									<span class="skill-badge">React</span>
+									<span class="skill-badge">NodeJS</span>
+									<span class="skill-badge">AWS</span>
+									<span class="skill-badge">GraphQL</span>
+								</div>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Javascript</span>
+									<span class="skill-badge">Postgres</span>
+									<span class="skill-badge">React Native</span>
+								</div>
+							</div>
+						
+							<div class="experiance-info">
+								<h4>Bastion Digital</h4>
+								<h4>Denver, CO.</h4>
+								<h4>Sep, 2020</h4>
+							</div>
+						</div>
+
+						
+
+						<p class="informational">
+							Architect, code and deploy full stack web
+							applications. Debug cross-browser compatibility.
+							Implement accessibility best practices. Develop
+							customer-focused and scalable user experiences.
+							Develop, manage, and test web applications and REST
+							APIs. Utilize code versioning best practices. Build
+							applications on NodeJS, React and Postgres.
+						</p>
+					</li>
+					<li class="experiance-item">
+						<div class="flex-row">
+
+							<div>
+								<h3>Software Engineer</h3>
+								<div class="skill-badge-container">
+									<span class="skill-badge">React</span>
+									<span class="skill-badge">NodeJS</span>
+									<span class="skill-badge">AWS</span>
+									<span class="skill-badge">GraphQL</span>
+								</div>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Javascript</span>
+									<span class="skill-badge">Postgres</span>
+									<span class="skill-badge">React Native</span>
+								</div>
+							</div>
+							
+							<div class="experiance-info">
+								<h4>Thinkful</h4>
+								<h4>Denver, CO.</h4>
+								<h4>Aug, 2019</h4>
+							</div>
+						</div>
 						<p class="informational">
 							Architect, code and deploy full stack web
 							applications. Debug cross-browser compatibility.
@@ -566,34 +621,31 @@
 						</p>
 					</li>
 
-					<li class="flex-item">
-						<h3>DataCamp</h3>
-						<h4>Data Scientist Graduate</h4>
-						<h4>Denver, CO.</h4>
-						<h4>Jun 2019</h4>
-						<p class="informational">
-							27+ certifications in data science, machine
-							learning, statistical inference, software
-							development and more. Develop data science skills
-							through self-guided projects and lectures. Parse,
-							clean and transform large datasets. Query relational
-							databases by executing SQL code. Log, debug, and
-							test code; ensure sufficient coverage. Adhere to
-							conventional software development practices,
-							documentation and version control. Leverage parallel
-							computer with PySpark. Apply dimensional reduction
-							and imputation techniques to large datasets. Utilize
-							supervised and unsupervised techniques. Build
-							reports, dashboards, and visualizations with
-							matplotlib, Seaborn, Bokeh, and Tableau.
-						</p>
-					</li>
+					<li class="experiance-item">
+						<div class="flex-row">
 
-					<li class="flex-item">
-						<h3>Target</h3>
-						<h4>Senior Manager</h4>
-						<h4>Hollywood, FL.</h4>
-						<h4>Jul 2016</h4>
+							<div>
+								<h3>Sr. Manager</h3>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Operations</span>
+									<span class="skill-badge">Sales</span>
+									<span class="skill-badge">Manager</span>
+									<span class="skill-badge">Analyst</span>
+								</div>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Talent mgmt</span>
+									<span class="skill-badge">Retail</span>
+									<span class="skill-badge">P/L</span>
+								</div>
+							</div>
+							
+							<div class="experiance-info">
+								<h4>Target</h4>
+								<h4>Hollywood, FL.</h4>
+								<h4>Jul 2016</h4>
+							</div>
+						</div>
+
 						<p class="informational">
 							Lead a sales-driven culture in a high energy, fun,
 							fast-paced environment. Improved store operations
@@ -607,11 +659,30 @@
 						</p>
 					</li>
 
-					<li class="flex-item">
-						<h3>Target</h3>
-						<h4>Manager</h4>
-						<h4>Miramar, FL.</h4>
-						<h4>Jan 2015</h4>
+					<li class="experiance-item">
+						<div class="flex-row">
+							<div>
+								<h3>Manager</h3>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Operations</span>
+									<span class="skill-badge">Sales</span>
+									<span class="skill-badge">Talent mgmt</span>
+									<span class="skill-badge">Manager</span>
+								</div>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Analyst</span>
+									<span class="skill-badge">Merchandising</span>
+									<span class="skill-badge">Retail</span>
+								</div>
+							</div>
+							
+							<div class="experiance-info">
+								<h4>Target</h4>
+								<h4>Miramar, FL.</h4>
+								<h4>Jan 2015</h4>
+							</div>
+						</div>
+
 						<p class="informational">
 							Managed a big box retailer generating $45M of annual
 							volume; achieved YoY growth of 3.2%. Managed and
@@ -627,11 +698,25 @@
 						</p>
 					</li>
 
-					<li class="flex-item">
-						<h3>Florida International University</h3>
-						<h4>Biological Science Mentor</h4>
-						<h4>Miami, FL.</h4>
-						<h4>Jul 2014</h4>
+					<li class="experiance-item">
+						<div class="flex-row">
+							<div>
+								<h3>Biological Science Mentor</h3>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Mentoring</span>
+									<span class="skill-badge">Leading</span>
+									<span class="skill-badge">Developing</span>
+									<span class="skill-badge">Research</span>
+								</div>
+							</div>
+							
+							<div class="experiance-info">
+								<h4>Florida Interntl. University</h4>
+								<h4>Miami, FL.</h4>
+								<h4>Jul 2014</h4>
+							</div>
+						</div>
+
 						<p class="informational">
 							Organize lectures, create content, and proctor exams
 							for pre-medical/Biology II students. Mentor groups
@@ -643,11 +728,24 @@
 						</p>
 					</li>
 
-					<li class="flex-item">
-						<h3>Apple</h3>
-						<h4>Technical Specialist</h4>
+					<li class="experiance-item"><div class="flex-row">
+					<div>
+						<h3>F.R. Specialist</h3>
+						<div class="skill-badge-container">
+							<span class="skill-badge">Hardware</span>
+							<span class="skill-badge">Software</span>
+							<span class="skill-badge">Mentoring</span>
+							<span class="skill-badge">Repair</span>
+						</div>
+					</div>
+					
+					<div class="experiance-info">
+						<h4>Apple</h4>
 						<h4>Aventura, FL.</h4>
 						<h4>Mar 2012</h4>
+					</div>
+					</div>
+
 						<p class="informational">
 							The first point of contact to proactively qualify
 							opportunities and potential solution fit. Prospect
