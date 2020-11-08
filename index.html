@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Peter Correa-Full Stack Developer" />
+		<meta charset="utf-8" ; http-equiv="Content-Type" content="text/html" />
+		<meta
+			name="description"
+			content="Peter Correa is a Full Stack Developer experianced with React, Node, GraphQL, MongoDB, Postgres, Express and more. "
+		/>
 		<meta
 			name="keywords"
-			content="HTML,CSS,JavaScript,Fullstack Developer"
+			content="HTML,CSS,JavaScript,Fullstack Developer, React Developer, Node Developer, Frontend Developer, Backend Developer, Software Engineer, Mobile Developer"
 		/>
 		<meta name="author" content="Peter Correa" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,64 +20,65 @@
 			href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="css.css" />
-		<title>Peter Correa</title>
+		<link rel="stylesheet" href="src/styles/css/fonts.css" />
+		<link rel="stylesheet" href="src/styles/css/styles.css" />
+		<link rel="stylesheet" href="src/styles/css/body.css" />
+		<link rel="stylesheet" href="src/styles/css/navbar.css" />
+		<link rel="stylesheet" href="src/styles/css/elements.css" />
+		<link rel="stylesheet" href="src/styles/css/gallaries.css" />
+		<title>Peter Correa - Fullstack Software Engineer</title>
 	</head>
 	<body>
 		<header>
 			<nav>
-				<ul>
-					<li class="mobile-menu">
-						<div class="mobile-menu-container" onclick="showNavMenu(this)">
-							<div class="bar1"></div>
-							<div class="bar2"></div>
-							<div class="bar3"></div>
-						</div>
-					</li>
-				</ul>
+				<div class="mobile-menu-container">
+					<ul class="mobile-menu" onclick="showNavMenu()">
+						<li id="bar1"></li>
+						<li id="bar2"></li>
+						<li id="bar3"></li>
+					</ul>
+				</div>
 
-				<ul class="menu-contact hidden">
-					<li class="contact-images">
-						<!-- email -->
+				<ul class="navbar-contact hidden">
+					<!-- email -->
+					<li>
 						<a
 							href="mailto:pmcorrea@me.com?subject=Reaching%20out..."
-							><img src="images/email.png" alt=""
+							><img src="src/assets/images/email.png" alt=""
 						/></a>
-						<!-- linkedin -->
+					</li>
+					<!-- linkedin -->
+					<li>
 						<a
 							href="https://www.linkedin.com/in/petercorrea/"
 							target="_blank"
-							><img src="images/linkedin.png" alt=""
+							><img src="src/assets/images/linkedin.png" alt=""
 						/></a>
+					</li>
 
-						<!-- github -->
+					<!-- github -->
+					<li>
 						<a href="https://github.com/pmcorrea" target="_blank"
-							><img src="images/github.png" alt=""
+							><img src="src/assets/images/github.png" alt=""
 						/></a>
-						<!-- medium -->
-						<!-- <a href="https://medium.com/@pmcorrea" target="_blank"
-							><img src="images/medium.png" alt=""
-						/></a> -->
 					</li>
 				</ul>
 
-				<ul class="menu-links hidden">
-					<li><a href="#bio" onclick="hideMenu(this)">bio</a></li>
+				<ul class="navbar-links hidden">
+					<li><a href="#bio" onclick="hideMenu()">bio</a></li>
 					<li>
-						<a href="#projects" onclick="hideMenu(this)"
-							>projects</a
-						>
+						<a href="#projects" onclick="hideMenu()">projects</a>
 					</li>
+					<!-- <li>
+						<a href="#skills" onclick="hideMenu()">skills</a>
+					</li> -->
 					<li>
-						<a href="#skills" onclick="hideMenu(this)">skills</a>
-					</li>
-					<li>
-						<a href="index.html#experience" onclick="hideMenu(this)"
+						<a href="index.html#experience" onclick="hideMenu()"
 							>experience</a
 						>
 					</li>
 					<li>
-						<a href="afk.html" onclick="hideMenu(this)">afk</a>
+						<a href="src/afk.html" onclick="hideMenu()">afk</a>
 					</li>
 				</ul>
 			</nav>
@@ -132,7 +136,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/1.png"
+								src="src/assets/strides/1.png"
 							/>
 						</div>
 
@@ -141,7 +145,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/2.png"
+								src="src/assets/strides/2.png"
 							/>
 						</div>
 
@@ -150,7 +154,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/3.png"
+								src="src/assets/strides/3.png"
 							/>
 						</div>
 
@@ -159,7 +163,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/4.png"
+								src="src/assets/strides/4.png"
 							/>
 						</div>
 
@@ -168,7 +172,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/5.png"
+								src="src/assets/strides/5.png"
 							/>
 						</div>
 
@@ -177,7 +181,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/6.png"
+								src="src/assets/strides/6.png"
 							/>
 						</div>
 
@@ -188,20 +192,14 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="strides/7.png"
+								src="src/assets/strides/7.png"
 							/>
 						</div>
 
-						<a
-							class="prev"
-							onclick="changeImgStrides(-1, 'strides-container', 'stridesDot')"
-						>
+						<a class="prev" onclick="changeImg(-1, 'strides')">
 							&lt;
 						</a>
-						<a
-							class="next"
-							onclick="changeImgStrides(1 , 'strides-container', 'stridesDot')"
-						>
+						<a class="next" onclick="changeImg(1 , 'strides')">
 							>
 						</a>
 
@@ -237,17 +235,17 @@
 						</div>
 					</div>
 
-					<div class="project-links">
-						<p class="title">Strides</p>
+					<div class="project-description">
+						<h5>Strides</h5>
 
 						<p>
-							Strides is a friendly companion for tracking and
-							building better habits. Strides was developed using
-							React, NodeJS, GraphQL and Postgres. Deployment
-							tools included Vercel and Heroku. Other notable
-							tools and libraries include: React Hooks, Router and
-							Context, Apollo, and Express. Testing was faciliated
-							using Testing Library, Chai, and Mocha. Security
+							A friendly companion for tracking and building
+							better habits. Strides was developed using React,
+							NodeJS, GraphQL and Postgres. Deployment tools
+							included Vercel and Heroku. Other notable tools and
+							libraries include: React Hooks, Router and Context,
+							Apollo, and Express. Testing was faciliated using
+							Testing Library, Chai, and Mocha. Security
 							considerations included implementing a JWT
 							authorization system with expiring tokens,
 							hashing/salting passwords with bcrypt, sanitizing
@@ -287,7 +285,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="centr/1.png"
+								src="src/assets/centr/1.png"
 							/>
 						</div>
 
@@ -298,7 +296,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="centr/2.png"
+								src="src/assets/centr/2.png"
 							/>
 						</div>
 
@@ -309,7 +307,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="centr/3.png"
+								src="src/assets/centr/3.png"
 							/>
 						</div>
 
@@ -320,7 +318,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="centr/4.png"
+								src="src/assets/centr/4.png"
 							/>
 						</div>
 
@@ -331,27 +329,19 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="centr/5.png"
+								src="src/assets/centr/5.png"
 							/>
 						</div>
 
-						<a
-							class="prev"
-							onclick="changeImgCentr(-1, 'centr-container', 'centrDot')"
-						>
+						<a class="prev" onclick="changeImg(-1, 'centr')">
 							&lt;
 						</a>
-						<a
-							class="next"
-							onclick="changeImgCentr(1, 'centr-container', 'centrDot')"
-						>
-							>
-						</a>
+						<a class="next" onclick="changeImg(1, 'centr')"> > </a>
 
 						<div class="dots-container">
 							<span
 								class="dot centrDot"
-								onclick="selectdisplayImgImgCentr(0), 'centr-container', 'centrDot' "
+								onclick="displayImg(0), 'centr-container', 'centrDot' "
 							></span>
 							<span
 								class="dot centrDot"
@@ -372,12 +362,12 @@
 						</div>
 					</div>
 
-					<div class="project-links">
-						<p class="title">Centr</p>
+					<div class="project-description">
+						<h5>Centr</h5>
 
 						<p>
-							Centr is a minimal social app for users bogged down
-							by content driven platforms. Center allows users to
+							The minimal social app for users bogged down by
+							content driven platforms. Center allows users to
 							sign up, create and organize posts, discover users,
 							and connect with others. Built with React, React
 							Router, NodeJS, Express, Knex, and Postgres.Testing
@@ -421,7 +411,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="dark_landing/1.png"
+								src="src/assets/dark_landing/1.png"
 							/>
 						</div>
 
@@ -432,7 +422,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="dark_landing/2.png"
+								src="src/assets/dark_landing/2.png"
 							/>
 						</div>
 
@@ -443,7 +433,7 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="dark_landing/3.png"
+								src="src/assets/dark_landing/3.png"
 							/>
 						</div>
 
@@ -454,22 +444,14 @@
 							<img
 								class="image-splash"
 								alt="project-img"
-								src="dark_landing/4.png"
+								src="src/assets/dark_landing/4.png"
 							/>
 						</div>
 
-						<a
-							class="prev"
-							onclick="changeImgDarkLanding(-1, 'dark-landing-container', 'darkLandingDot')"
-						>
+						<a class="prev" onclick="changeImg(-1, 'fylo')">
 							&lt;
 						</a>
-						<a
-							class="next"
-							onclick="changeImgDarkLanding(1, 'dark-landing-container', 'darkLandingDot')"
-						>
-							>
-						</a>
+						<a class="next" onclick="changeImg(1, 'fylo')"> > </a>
 
 						<div class="dots-container">
 							<span
@@ -491,8 +473,8 @@
 						</div>
 					</div>
 
-					<div class="project-links">
-						<p class="title">Flyo Landing Page</p>
+					<div class="project-description">
+						<h5>Flyo Landing Page</h5>
 
 						<p>
 							A generic landing page for a Dropbox like product
@@ -517,34 +499,34 @@
 				</div>
 			</section>
 
-			<section id="skills">
+			<!-- <section id="skills">
 				<h2>skills</h2>
 				<div class="row_skills">
-					<img src="images/js.png" alt="" />
-					<img src="images/html.svg" alt="" />
-					<img src="images/css.png" alt="" />
-					<img src="images/react.png" alt="" />
-					<img src="images/nodejs.png" alt="" />
+					<img src="src/assets/images/js.png" alt="" />
+					<img src="src/assets/images/html.svg" alt="" />
+					<img src="src/assets/images/css.png" alt="" />
+					<img src="src/assets/images/react.png" alt="" />
+					<img src="src/assets/images/nodejs.png" alt="" />
 
-					<img src="images/express.png" alt="" />
-					<img src="images/postgres.png" alt="" />
-					<img src="images/mongo.png" alt="" />
-					<img src="images/jest.png" alt="" />
-					<img src="images/mocha.png" alt="" />
-					<img src="images/chai.png" alt="" />
+					<img src="src/assets/images/express.png" alt="" />
+					<img src="src/assets/images/postgres.png" alt="" />
+					<img src="src/assets/images/mongo.png" alt="" />
+					<img src="src/assets/images/jest.png" alt="" />
+					<img src="src/assets/images/mocha.png" alt="" />
+					<img src="src/assets/images/chai.png" alt="" />
 
-					<img src="images/git.png" alt="" />
-					<img src="images/jquery.svg" alt="" />
-					<img src="images/bootstrap.png" alt="" />
+					<img src="src/assets/images/git.png" alt="" />
+					<img src="src/assets/images/jquery.svg" alt="" />
+					<img src="src/assets/images/bootstrap.png" alt="" />
 
-					<img src="images/python.png" alt="" />
-					<img src="images/jLabs.png" alt="" />
-					<img src="images/scikit-learn.png" alt="" />
-					<img src="images/pandas.png" alt="" />
-					<img src="images/numpy.png" alt="" />
-					<img src="images/matplotlib.png" alt="" />
+					<img src="src/assets/images/python.png" alt="" />
+					<img src="src/assets/images/jLabs.png" alt="" />
+					<img src="src/assets/images/scikit-learn.png" alt="" />
+					<img src="src/assets/images/pandas.png" alt="" />
+					<img src="src/assets/images/numpy.png" alt="" />
+					<img src="src/assets/images/matplotlib.png" alt="" />
 				</div>
-			</section>
+			</section> -->
 
 			<section id="experience">
 				<h2>experience</h2>
@@ -562,18 +544,18 @@
 								<div class="skill-badge-container">
 									<span class="skill-badge">Javascript</span>
 									<span class="skill-badge">Postgres</span>
-									<span class="skill-badge">React Native</span>
+									<span class="skill-badge"
+										>React Native</span
+									>
 								</div>
 							</div>
-						
+
 							<div class="experiance-info">
 								<h4>Bastion Digital</h4>
 								<h4>Denver, CO.</h4>
 								<h4>Sep, 2020</h4>
 							</div>
 						</div>
-
-						
 
 						<p class="informational">
 							Architect, code and deploy full stack web
@@ -587,7 +569,6 @@
 					</li>
 					<li class="experiance-item">
 						<div class="flex-row">
-
 							<div>
 								<h3>Software Engineer</h3>
 								<div class="skill-badge-container">
@@ -599,10 +580,12 @@
 								<div class="skill-badge-container">
 									<span class="skill-badge">Javascript</span>
 									<span class="skill-badge">Postgres</span>
-									<span class="skill-badge">React Native</span>
+									<span class="skill-badge"
+										>React Native</span
+									>
 								</div>
 							</div>
-							
+
 							<div class="experiance-info">
 								<h4>Thinkful</h4>
 								<h4>Denver, CO.</h4>
@@ -622,7 +605,6 @@
 
 					<li class="experiance-item">
 						<div class="flex-row">
-
 							<div>
 								<h3>Sr. Manager</h3>
 								<div class="skill-badge-container">
@@ -637,7 +619,7 @@
 									<span class="skill-badge">P/L</span>
 								</div>
 							</div>
-							
+
 							<div class="experiance-info">
 								<h4>Target</h4>
 								<h4>Hollywood, FL.</h4>
@@ -670,11 +652,13 @@
 								</div>
 								<div class="skill-badge-container">
 									<span class="skill-badge">Analyst</span>
-									<span class="skill-badge">Merchandising</span>
+									<span class="skill-badge"
+										>Merchandising</span
+									>
 									<span class="skill-badge">Retail</span>
 								</div>
 							</div>
-							
+
 							<div class="experiance-info">
 								<h4>Target</h4>
 								<h4>Miramar, FL.</h4>
@@ -708,7 +692,7 @@
 									<span class="skill-badge">Research</span>
 								</div>
 							</div>
-							
+
 							<div class="experiance-info">
 								<h4>Florida Interntl. University</h4>
 								<h4>Miami, FL.</h4>
@@ -727,23 +711,24 @@
 						</p>
 					</li>
 
-					<li class="experiance-item"><div class="flex-row">
-					<div>
-						<h3>F.R. Specialist</h3>
-						<div class="skill-badge-container">
-							<span class="skill-badge">Hardware</span>
-							<span class="skill-badge">Software</span>
-							<span class="skill-badge">Mentoring</span>
-							<span class="skill-badge">Repair</span>
+					<li class="experiance-item">
+						<div class="flex-row">
+							<div>
+								<h3>F.R. Specialist</h3>
+								<div class="skill-badge-container">
+									<span class="skill-badge">Hardware</span>
+									<span class="skill-badge">Software</span>
+									<span class="skill-badge">Mentoring</span>
+									<span class="skill-badge">Repair</span>
+								</div>
+							</div>
+
+							<div class="experiance-info">
+								<h4>Apple</h4>
+								<h4>Aventura, FL.</h4>
+								<h4>Mar 2012</h4>
+							</div>
 						</div>
-					</div>
-					
-					<div class="experiance-info">
-						<h4>Apple</h4>
-						<h4>Aventura, FL.</h4>
-						<h4>Mar 2012</h4>
-					</div>
-					</div>
 
 						<p class="informational">
 							The first point of contact to proactively qualify
@@ -764,7 +749,6 @@
 		</main>
 
 		<footer></footer>
-		<script src="script.js"></script>
-		<script src="script2.js"></script>
+		<script src="src/scripts/script.js"></script>
 	</body>
 </html>

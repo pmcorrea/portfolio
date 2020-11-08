@@ -1,0 +1,32 @@
+{
+	"name": "petercorrea.com",
+	"version": "1.0.0",
+	"description": "Peter Correa is a fullstack software engineer.",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"style": "sass --watch src/styles/scss:src/styles/css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pmcorrea/portfolio.git"
+	},
+	"keywords": [
+		"Peter",
+		"Correa",
+		"portfolio",
+		"fullstack",
+		"software",
+		"engineer"
+	],
+	"author": "Peter Correa",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pmcorrea/portfolio/issues"
+	},
+	"homepage": "https://github.com/pmcorrea/portfolio#readme",
+	"dependencies": {
+		"sass": "^1.29.0",
+		"scss": "^0.2.4"
+	}
+}

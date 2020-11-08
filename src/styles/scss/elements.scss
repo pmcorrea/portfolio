@@ -1,0 +1,68 @@
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+	color: black;
+	height: 100vh;
+	// max-height: 100vh;
+}
+
+.skill-badge-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 10px 0px;
+	margin-right: 10px;
+}
+
+.skill-badge {
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 25px;
+	padding: 5px 10px;
+
+	font-size: 0.8rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	margin-right: 5px;
+	text-transform: lowercase;
+	text-align: center;
+}
+
+.row_skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.row_skills img {
+	width: 50px;
+	margin: 10px;
+	-webkit-filter: grayscale(95%); /* Safari */
+	filter: grayscale(95%);
+}
+
+.experiance-item {
+	margin-bottom: 40px;
+}
+
+img[src="./images/Compressed/picture29.jpeg"] {
+	object-position: 0px -150px;
+}
+
+img[src="./images/Compressed/picture31.jpg"] {
+	object-position: 0px -10px;
+}
+
+img[src="./images/Compressed/picture78.jpeg"] {
+	object-position: 0px -80px;
+}
+
+img[src="./images/Compressed/picture99.jpeg"] {
+	object-position: 0px -80px;
+}
