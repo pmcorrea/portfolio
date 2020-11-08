@@ -1,6 +1,5 @@
 @use 'base';
 
-/* Mobile Nav bar */
 nav {
 	@include base.flexcolumn;
 	position: fixed;
@@ -20,12 +19,6 @@ nav {
 		align-items: center;
 	}
 
-	ul {
-		list-style-type: none;
-		text-align: right;
-		position: relative;
-	}
-
 	.mobile-menu {
 		position: absolute;
 		// display: block;
@@ -34,6 +27,12 @@ nav {
 		right: 10px;
 		top: 10px;
 		z-index: 1000;
+	}
+
+	ul {
+		list-style-type: none;
+		text-align: right;
+		position: relative;
 	}
 
 	.navbar-contact {
@@ -57,23 +56,98 @@ nav {
 
 	.navbar-links {
 		padding: 20px 0px;
+
+		a:hover {
+			color: white;
+		}
+
+		a {
+			font-weight: light;
+			font-family: "Roboto", sans-serif;
+			line-height: 1.5;
+			color: white;
+			text-decoration: none;
+			margin: 10px 0;
+			font-size: 2rem;
+		}
+	}
+}
+
+// Medua Queries
+@media only all and (max-width: 768px) {
+	.mobile-menu {
+		display: block;
+	}
+
+	.mobile-menu > li {
+		display: block;
+	}
+
+	.navbar-contact {
+		width: 200px;
+	}
+
+	.navbar-links {
+		width: 200px;
 	}
 
 	.navbar-links a:hover {
 		font-weight: 600;
 	}
 
-	a {
-		font-weight: light;
-		font-family: "Roboto", sans-serif;
-		line-height: 1.5;
-		color: white;
-		text-decoration: none;
-		margin: 10px 0;
-		font-size: 2rem;
+	.cover {
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
 	}
 }
 
+@media only all and (min-width: 769px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-between;
+		position: relative;
+		height: 70px;
+
+		.mobile-menu {
+			display: none;
+		}
+
+		.navbar-contact {
+			position: absolute;
+			left: 0px;
+		}
+
+		.navbar-contact,
+		.navbar-links {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			// width: fit-content;
+			margin: 0;
+			padding: 0;
+
+			a {
+				font-weight: 400;
+				font-family: "Roboto", sans-serif;
+				line-height: 1.5;
+				color: rgb(194, 194, 194);
+				text-decoration: none;
+				margin: 10px;
+				font-size: 1rem;
+			}
+
+			img {
+				width: 30px;
+			}
+		}
+	}
+}
+
+// Hamburgerstack Animation
 #bar1,
 #bar2,
 #bar3 {
@@ -100,73 +174,4 @@ nav {
 
 .hidden {
 	display: none;
-}
-
-@media only all and (max-width: 768px) {
-	.mobile-menu {
-		display: block;
-	}
-
-	.mobile-menu > li {
-		display: block;
-	}
-
-	.navbar-contact {
-		width: 200px;
-	}
-
-	.navbar-links {
-		width: 200px;
-	}
-
-	.cover {
-		height: 100vh;
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		bottom: 0px;
-	}
-}
-
-@media only all and (min-width: 769px) {
-	nav {
-		flex-direction: row;
-		justify-content: space-between;
-		position: relative;
-		height: 40px;
-
-		.mobile-menu {
-			display: none;
-		}
-
-		.navbar-contact {
-			position: absolute;
-			left: 0px;
-		}
-
-		.navbar-contact,
-		.navbar-links {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			// width: fit-content;
-			margin: 0;
-			padding: 0;
-
-			a {
-				font-weight: 300;
-				font-family: "Roboto", sans-serif;
-				line-height: 1.5;
-				color: white;
-				text-decoration: none;
-				margin: 10px;
-				font-size: 1rem;
-			}
-
-			img {
-				width: 30px;
-			}
-		}
-	}
 }

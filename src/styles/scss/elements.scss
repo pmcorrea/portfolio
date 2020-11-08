@@ -18,6 +18,11 @@
 	line-height: 30px;
 }
 
+.app_links:hover {
+	background-color: white;
+	color: black;
+}
+
 .skill-badge-container {
 	display: flex;
 	width: 100%;
@@ -29,8 +34,9 @@
 }
 
 .skill-badge {
-	color: white;
-	background-color: rgb(0, 0, 0);
+	color: black;
+	background-color: rgb(255, 255, 255);
+	border: solid black 1px;
 	border-radius: 25px;
 	padding: 5px 10px;
 

@@ -74,30 +74,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .title {
-    margin: 0px 0px;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
   .first-experiance {
     margin-top: 40px;
   }
 
-  .project-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .project-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 400px;
-    min-height: 300px;
+  .title {
+    margin: 0px 0px;
+    font-size: 2rem;
+    font-weight: 700;
   }
 
   .project-description > .title {
@@ -106,7 +90,6 @@
 
   .project-screenshots {
     width: 50vw;
-    height: 30vw;
     position: relative;
     margin: 0px 20px;
     display: flex;
