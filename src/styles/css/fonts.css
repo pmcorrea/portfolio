@@ -92,4 +92,10 @@ section {
   width: 90vw;
 }
 
+@media only all and (min-width: 768px) {
+  h5 {
+    margin-top: 0px;
+  }
+}
+
 /*# sourceMappingURL=fonts.css.map */

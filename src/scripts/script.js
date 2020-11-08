@@ -96,12 +96,30 @@ function displayImg(n, imgsClass, dotsClass) {
 	// Display the selected container and dots
 	imgs[n].style.display = "block";
 	dots[n].className += " active";
+
+	switch (imgsClass) {
+		case "strides-container":
+			imgIdxStrides = n;
+			break;
+
+		case "dark-landing-container":
+			imgIdxDarkLanding = n;
+			break;
+
+		case "centr-container":
+			imgIdxCentr = n;
+			break;
+	}
 }
 
 function showNavMenu() {
 	let hamburger_stack = document.getElementsByClassName("mobile-menu")[0]
 		.children;
 	hamburger_stack[0].classList.toggle("change");
+	hamburger_stack[1].classList.toggle("change");
+	hamburger_stack[2].classList.toggle("change");
+
+	document.getElementsByTagName("nav")[0].classList.toggle("cover");
 
 	let navbar_contacts = document.getElementsByClassName("navbar-contact")[0];
 	navbar_contacts.classList.toggle("hidden");
@@ -114,6 +132,9 @@ function hideMenu() {
 	let hamburger_stack = document.getElementsByClassName("mobile-menu")[0]
 		.children;
 	hamburger_stack[0].classList.toggle("change");
+	hamburger_stack[1].classList.toggle("change");
+	hamburger_stack[2].classList.toggle("change");
+	document.getElementsByTagName("nav")[0].classList.toggle("cover");
 
 	let navbar_contacts = document.getElementsByClassName("navbar-contact")[0];
 	navbar_contacts.classList.toggle("hidden");

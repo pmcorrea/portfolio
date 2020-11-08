@@ -2,7 +2,7 @@
 nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: fixed;
   width: 100vw;
@@ -12,11 +12,10 @@ nav {
   z-index: 1000;
   color: white;
   background-color: black;
-  padding: 10px;
+  padding: 10px 20px;
 }
 nav .mobile-menu-container {
   display: flex;
-  width: 100%;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -37,15 +36,12 @@ nav .mobile-menu {
 nav .navbar-contact {
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  text-align: center;
-  margin-top: 100px;
 }
 nav .navbar-contact li {
   width: fit-content;
-  margin: 0 10px;
+  margin-left: 10px;
   display: inline-block;
 }
 nav .navbar-contact img {
@@ -55,6 +51,9 @@ nav .navbar-contact img {
 }
 nav .navbar-links {
   padding: 20px 0px;
+}
+nav .navbar-links a:hover {
+  font-weight: 600;
 }
 nav a {
   font-weight: light;
@@ -73,19 +72,19 @@ nav a {
   height: 2px;
   background-color: white;
   margin: 6px 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
-.change #bar1 {
+.change#bar1 {
   -webkit-transform: rotate(-45deg) translate(-12px, 11px);
   transform: rotate(-45deg) translate(-12px, 11px);
 }
 
-.change #bar2 {
+.change#bar2 {
   opacity: 0;
 }
 
-.change #bar3 {
+.change#bar3 {
   -webkit-transform: rotate(45deg) translate(0px, 0px);
   transform: rotate(45deg) translate(0px, 0px);
 }
@@ -98,24 +97,47 @@ nav a {
   .mobile-menu {
     display: block;
   }
+
+  .mobile-menu > li {
+    display: block;
+  }
+
+  .navbar-contact {
+    width: 200px;
+  }
+
+  .navbar-links {
+    width: 200px;
+  }
+
+  .cover {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
 }
-@media only all and (min-width: 768px) {
+@media only all and (min-width: 769px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    height: 40px;
   }
   nav .mobile-menu {
     display: none;
   }
-  nav li {
-    display: inline;
+  nav .navbar-contact {
+    position: absolute;
+    left: 0px;
   }
   nav .navbar-contact,
 nav .navbar-links {
-    display: block;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: fit-content;
     margin: 0;
     padding: 0;
   }
@@ -128,6 +150,10 @@ nav .navbar-links a {
     text-decoration: none;
     margin: 10px;
     font-size: 1rem;
+  }
+  nav .navbar-contact img,
+nav .navbar-links img {
+    width: 30px;
   }
 }
 
