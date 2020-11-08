@@ -9,14 +9,6 @@
 	padding: 20px;
 	border-radius: 10px;
 
-	.project-screenshots:hover {
-		& a,
-		& .image-count,
-		& .dots-container {
-			opacity: 1;
-		}
-	}
-
 	.project-screenshots {
 		width: 100%;
 		// height: 50vw;
@@ -46,7 +38,7 @@
 			width: 50px;
 			text-align: center;
 			padding: 5px;
-			opacity: 0.2;
+			// opacity: 0.2;
 			transition: opacity 0.2s ease-in;
 		}
 
@@ -59,7 +51,7 @@
 			text-align: center;
 			position: absolute;
 			bottom: 0px;
-			opacity: 0.2;
+			// opacity: 0.2;
 			transition: opacity 0.2s ease-in;
 		}
 
@@ -90,7 +82,7 @@
 			line-height: 40px;
 			position: absolute;
 			top: 50%;
-			opacity: 0.2;
+			// opacity: 0.2;
 			transition: opacity 0.2s ease-in;
 		}
 
@@ -136,6 +128,15 @@
 	row-gap: 10px;
 }
 
+@media only all and (max-width: 768px) {
+	.project-screenshots {
+		& a,
+		& .image-count,
+		& .dots-container {
+			opacity: 1;
+		}
+	}
+}
 @media only all and (min-width: 769px) {
 	.project-screenshots {
 		height: 100%;
@@ -162,5 +163,21 @@
 
 	.image-splash {
 		min-height: 500px;
+	}
+
+	.project-screenshots {
+		& a,
+		& .image-count,
+		& .dots-container {
+			opacity: 0.2;
+		}
+	}
+
+	.project-screenshots:hover {
+		& a,
+		& .image-count,
+		& .dots-container {
+			opacity: 1;
+		}
 	}
 }
