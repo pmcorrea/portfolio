@@ -33,9 +33,9 @@
 }
 
 .skill-badge {
-  color: black;
+  color: #a7a7a7;
   background-color: white;
-  border: solid black 1px;
+  border: solid #a7a7a7 1px;
   border-radius: 25px;
   padding: 5px 10px;
   font-size: 0.8rem;
