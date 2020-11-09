@@ -1,3 +1,11 @@
+:root {
+  --active: white;
+  --unactive: gray;
+  --white: white;
+  --black: black;
+  --lightgray: lightgray;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -9,8 +17,8 @@ nav {
   top: 0px;
   right: 0px;
   z-index: 1000;
-  color: white;
-  background-color: black;
+  color: var(--unactive);
+  background-color: var(--black);
   padding: 10px 20px;
 }
 nav .mobile-menu-container {
@@ -54,13 +62,13 @@ nav .navbar-links {
   padding: 20px 0px;
 }
 nav .navbar-links a:hover {
-  color: white;
+  color: var(--active);
 }
 nav .navbar-links a {
   font-weight: light;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  color: white;
+  color: var(--unactive);
   text-decoration: none;
   margin: 10px 0;
   font-size: 4rem;
@@ -82,6 +90,12 @@ nav .navbar-links a {
   }
   .navbar-contact img {
     margin-left: 50px;
+    top: 0px;
+  }
+  .navbar-contact img:hover {
+    position: relative;
+    top: -10px;
+    transition: all 0.1s ease-in;
   }
 
   .navbar-links {
@@ -90,6 +104,7 @@ nav .navbar-links a {
 
   .navbar-links a:hover {
     font-weight: 600;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 80px;
   }
 
   .cover {
@@ -131,7 +146,7 @@ nav .navbar-links a {
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    color: #c2c2c2;
+    color: var(--unactive);
     text-decoration: none;
     margin: 10px;
     font-size: 1rem;
@@ -146,7 +161,7 @@ nav .navbar-links img {
 #bar3 {
   width: 35px;
   height: 2px;
-  background-color: white;
+  background-color: var(--white);
   margin: 6px 0;
   transition: 0.2s;
 }

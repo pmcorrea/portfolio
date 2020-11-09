@@ -1,5 +1,13 @@
 @use 'base';
 
+:root {
+	--active: white;
+	--unactive: gray;
+	--white: white;
+	--black: black;
+	--lightgray: lightgray;
+}
+
 nav {
 	@include base.flexcolumn;
 	position: fixed;
@@ -8,8 +16,8 @@ nav {
 	top: 0px;
 	right: 0px;
 	z-index: 1000;
-	color: white;
-	background-color: rgba(0, 0, 0, 1);
+	color: var(--unactive);
+	background-color: var(--black);
 	padding: 10px 20px;
 
 	.mobile-menu-container {
@@ -61,14 +69,14 @@ nav {
 		padding: 20px 0px;
 
 		a:hover {
-			color: white;
+			color: var(--active);
 		}
 
 		a {
 			font-weight: light;
 			font-family: "Roboto", sans-serif;
 			line-height: 1.5;
-			color: white;
+			color: var(--unactive);
 			text-decoration: none;
 			margin: 10px 0;
 			font-size: 4rem;
@@ -97,6 +105,13 @@ nav {
 
 		img {
 			margin-left: 50px;
+			top: 0px;
+		}
+
+		img:hover {
+			position: relative;
+			top: -10px;
+			transition: all 0.1s ease-in;
 		}
 	}
 
@@ -106,6 +121,7 @@ nav {
 
 	.navbar-links a:hover {
 		font-weight: 600;
+		text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 80px;
 	}
 
 	.cover {
@@ -150,7 +166,7 @@ nav {
 				font-weight: 400;
 				font-family: "Roboto", sans-serif;
 				line-height: 1.5;
-				color: rgb(194, 194, 194);
+				color: var(--unactive);
 				text-decoration: none;
 				margin: 10px;
 				font-size: 1rem;
@@ -169,7 +185,7 @@ nav {
 #bar3 {
 	width: 35px;
 	height: 2px;
-	background-color: white;
+	background-color: var(--white);
 	margin: 6px 0;
 	transition: 0.2s;
 }
