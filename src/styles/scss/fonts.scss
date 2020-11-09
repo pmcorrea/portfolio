@@ -72,7 +72,7 @@ a {
 }
 
 .experiance-info h4 {
-	text-align: right;
+	// text-align: right;
 }
 
 .bio-text {
@@ -102,6 +102,14 @@ section {
 
 body {
 	// overflow: hidden;
+}
+
+.experiance-item-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 @media only all and (min-width: 768px) {
