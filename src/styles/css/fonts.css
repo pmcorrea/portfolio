@@ -90,6 +90,10 @@ section {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .experiance-item-title {
   display: flex;
   flex-direction: row;
