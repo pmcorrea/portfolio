@@ -8,7 +8,7 @@ html {
   font-size: 16px;
   overflow-x: hidden;
   max-width: 100vw;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Text */
@@ -97,12 +97,23 @@ body {
   overflow-x: hidden;
 }
 
-.experiance-item-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+@media only all and (max-width: 819px) {
+  .experiance-item-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media only all and (min-width: 820px) {
+  .experiance-item-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 @media only all and (min-width: 820px) {

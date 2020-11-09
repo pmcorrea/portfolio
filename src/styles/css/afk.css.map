@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,iBAAiB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAE,iBAAiB;EACrC,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,SAAS;EACjB,OAAO,EAAE,IAAI;CACb",
-    "sources": [
-        "afk.scss"
-    ],
-    "names": [],
-    "file": "afk.css"
-}

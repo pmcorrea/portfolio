@@ -1,5 +1,3 @@
-@use 'base';
-
 :root {
 	--active: white;
 	--unactive: gray;
@@ -9,7 +7,11 @@
 }
 
 nav {
-	@include base.flexcolumn;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	position: fixed;
 	width: 100vw;
 	min-height: 50px;

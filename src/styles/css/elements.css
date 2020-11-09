@@ -35,6 +35,17 @@
   margin: 10px 0px;
   margin-right: 10px;
 }
+@media only all and (max-width: 819px) {
+  .skill-badge-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+    margin-right: 10px;
+  }
+}
 
 .skill-badge {
   color: #a7a7a7;

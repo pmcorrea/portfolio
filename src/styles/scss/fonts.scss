@@ -105,11 +105,23 @@ body {
 }
 
 .experiance-item-title {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+	// mobile style
+	@media only all and (max-width: 819px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	// desktop style
+	@media only all and (min-width: 820px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
 }
 
 @media only all and (min-width: 820px) {
