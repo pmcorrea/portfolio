@@ -117,6 +117,11 @@ nav .navbar-links a {
     padding: 0px 50px;
   }
 }
+@media only all and (max-width: 819px) and (orientation: landscape) {
+  nav {
+    padding: 20px;
+  }
+}
 @media only all and (min-width: 820px) {
   nav {
     flex-direction: row;

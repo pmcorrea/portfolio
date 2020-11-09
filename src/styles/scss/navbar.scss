@@ -85,6 +85,7 @@ nav {
 }
 
 // Media Queries
+// Mobile - Portrait
 @media only all and (max-width: 819px) {
 	nav {
 		// padding: 50px;
@@ -132,6 +133,13 @@ nav {
 		right: 0px;
 		bottom: 0px;
 		padding: 0px 50px;
+	}
+}
+
+// Mobile - Landscape
+@media only all and (max-width: 819px) and (orientation: landscape) {
+	nav {
+		padding: 20px;
 	}
 }
 
