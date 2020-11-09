@@ -38,9 +38,10 @@ nav {
 	.navbar-contact {
 		flex-direction: row;
 		flex-wrap: nowrap;
-		justify-content: space-evenly;
+		justify-content: flex-end;
 		align-items: center;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		width: 100%;
 
 		li {
 			width: fit-content;
@@ -49,7 +50,8 @@ nav {
 		}
 
 		img {
-			width: 80px;
+			width: 60px;
+
 			-webkit-filter: brightness(100%) invert(100%);
 			filter: brightness(100%) invert(100%);
 		}
@@ -76,6 +78,9 @@ nav {
 
 // Media Queries
 @media only all and (max-width: 819px) {
+	nav {
+		// padding: 50px;
+	}
 	.mobile-menu {
 		display: block;
 	}
@@ -85,14 +90,18 @@ nav {
 	}
 
 	.navbar-contact {
-		width: 500px;
-		display: flex;
+		width: 100%;
 
-		justify-content: space-between;
+		display: flex;
+		justify-content: flex-end;
+
+		img {
+			margin-left: 50px;
+		}
 	}
 
 	.navbar-links {
-		width: 500px;
+		width: 100%;
 	}
 
 	.navbar-links a:hover {
@@ -106,6 +115,7 @@ nav {
 		left: 0px;
 		right: 0px;
 		bottom: 0px;
+		padding: 0px 50px;
 	}
 }
 
@@ -115,6 +125,7 @@ nav {
 		justify-content: space-between;
 		position: relative;
 		height: 70px;
+		padding: 10px;
 
 		.mobile-menu {
 			display: none;
@@ -123,6 +134,7 @@ nav {
 		.navbar-contact {
 			position: absolute;
 			left: 0px;
+			width: 200px;
 		}
 
 		.navbar-contact,

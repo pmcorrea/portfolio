@@ -35,9 +35,10 @@ nav ul {
 nav .navbar-contact {
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 nav .navbar-contact li {
   width: fit-content;
@@ -45,7 +46,7 @@ nav .navbar-contact li {
   display: inline-block;
 }
 nav .navbar-contact img {
-  width: 80px;
+  width: 60px;
   -webkit-filter: brightness(100%) invert(100%);
   filter: brightness(100%) invert(100%);
 }
@@ -75,13 +76,16 @@ nav .navbar-links a {
   }
 
   .navbar-contact {
-    width: 500px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+  .navbar-contact img {
+    margin-left: 50px;
   }
 
   .navbar-links {
-    width: 500px;
+    width: 100%;
   }
 
   .navbar-links a:hover {
@@ -95,6 +99,7 @@ nav .navbar-links a {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    padding: 0px 50px;
   }
 }
 @media only all and (min-width: 820px) {
@@ -103,6 +108,7 @@ nav .navbar-links a {
     justify-content: space-between;
     position: relative;
     height: 70px;
+    padding: 10px;
   }
   nav .mobile-menu {
     display: none;
@@ -110,6 +116,7 @@ nav .navbar-links a {
   nav .navbar-contact {
     position: absolute;
     left: 0px;
+    width: 200px;
   }
   nav .navbar-contact,
 nav .navbar-links {
