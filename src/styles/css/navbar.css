@@ -35,8 +35,9 @@ nav ul {
 nav .navbar-contact {
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 40px;
 }
 nav .navbar-contact li {
   width: fit-content;
@@ -44,7 +45,7 @@ nav .navbar-contact li {
   display: inline-block;
 }
 nav .navbar-contact img {
-  width: 40px;
+  width: 80px;
   -webkit-filter: brightness(100%) invert(100%);
   filter: brightness(100%) invert(100%);
 }
@@ -61,10 +62,10 @@ nav .navbar-links a {
   color: white;
   text-decoration: none;
   margin: 10px 0;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
-@media only all and (max-width: 768px) {
+@media only all and (max-width: 819px) {
   .mobile-menu {
     display: block;
   }
@@ -74,11 +75,13 @@ nav .navbar-links a {
   }
 
   .navbar-contact {
-    width: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar-links {
-    width: 200px;
+    width: 500px;
   }
 
   .navbar-links a:hover {
@@ -94,7 +97,7 @@ nav .navbar-links a {
     bottom: 0px;
   }
 }
-@media only all and (min-width: 769px) {
+@media only all and (min-width: 820px) {
   nav {
     flex-direction: row;
     justify-content: space-between;

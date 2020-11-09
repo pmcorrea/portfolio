@@ -97,7 +97,7 @@ section {
   width: 100%;
 }
 
-@media only all and (min-width: 768px) {
+@media only all and (min-width: 820px) {
   h5 {
     margin-top: 0px;
   }

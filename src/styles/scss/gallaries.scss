@@ -21,7 +21,8 @@
 
 		.image-container {
 			width: 100%;
-			height: 100%;
+			height: 95%;
+			max-height: 500px;
 			display: none;
 			overflow: hidden;
 		}
@@ -29,6 +30,7 @@
 		.image-splash {
 			object-fit: cover;
 			width: 100%;
+			height: 350px;
 		}
 
 		.image-count {
@@ -128,7 +130,7 @@
 	row-gap: 10px;
 }
 
-@media only all and (max-width: 768px) {
+@media only all and (max-width: 819px) {
 	.project-screenshots {
 		& a,
 		& .image-count,
@@ -137,7 +139,7 @@
 		}
 	}
 }
-@media only all and (min-width: 769px) {
+@media only all and (min-width: 820px) {
 	.project-screenshots {
 		height: 100%;
 	}
