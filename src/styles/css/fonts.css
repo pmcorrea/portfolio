@@ -8,7 +8,7 @@ html {
   font-size: 16px;
   overflow-x: hidden;
   max-width: 100vw;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Text */
