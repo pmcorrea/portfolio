@@ -71,7 +71,7 @@ nav .navbar-links a {
   color: var(--unactive);
   text-decoration: none;
   margin: 10px 0;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 @media only all and (max-width: 819px) {
@@ -89,7 +89,7 @@ nav .navbar-links a {
     justify-content: flex-end;
   }
   .navbar-contact img {
-    margin-left: 50px;
+    margin-left: 20px;
     top: 0px;
   }
   .navbar-contact img:hover {
@@ -100,6 +100,10 @@ nav .navbar-links a {
 
   .navbar-links {
     width: 100%;
+  }
+
+  .navbar-links li a {
+    color: var(--active);
   }
 
   .navbar-links a:hover {
@@ -120,6 +124,20 @@ nav .navbar-links a {
 @media only all and (max-width: 819px) and (orientation: landscape) {
   nav {
     padding: 20px;
+  }
+  nav .navbar-contact img {
+    width: 30px;
+  }
+  nav .navbar-links {
+    max-height: 100vh;
+  }
+  nav .navbar-links a {
+    font-size: 2rem;
+    color: var(--active);
+  }
+
+  .cover {
+    padding: 80px;
   }
 }
 @media only all and (min-width: 820px) {
