@@ -35,7 +35,7 @@ nav {
 		// display: block;
 		cursor: pointer;
 		padding: 0px;
-		right: 10px;
+		right: 20px;
 		top: 10px;
 		z-index: 1000;
 	}
@@ -115,7 +115,7 @@ nav {
 		img:hover {
 			position: relative;
 			top: -10px;
-			transition: all 0.1s ease-in;
+			transition: all 0.2s ease-in;
 		}
 	}
 
@@ -130,6 +130,7 @@ nav {
 	.navbar-links a:hover {
 		font-weight: 600;
 		text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 80px;
+		text-decoration: underline;
 	}
 
 	.cover {
@@ -196,13 +197,21 @@ nav {
 			padding: 0;
 
 			a {
+				position: relative;
 				font-weight: 400;
 				font-family: "Roboto", sans-serif;
 				line-height: 1.5;
-				color: var(--unactive);
+				color: var(--active);
 				text-decoration: none;
-				margin: 10px;
-				font-size: 1rem;
+				margin: 0px;
+				padding: 10px;
+				font-size: 1.2rem;
+				top: 0px;
+			}
+
+			a:hover {
+				top: -5px;
+				text-decoration: underline;
 			}
 
 			img {
