@@ -143,6 +143,24 @@ function hideMenu() {
 	navbar_links.classList.toggle("hidden");
 }
 
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+	if (window.innerWidth < 720) {
+		console.log(window.innerWidth);
+		let currentScrollPos = window.pageYOffset;
+		// scrolling down
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementsByTagName("nav")[0].style.top = "0";
+			// scrolling up
+		} else if (prevScrollpos < currentScrollPos) {
+			document.getElementsByTagName("nav")[0].style.top = "-50px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
+};
+
 displayImg(0, "centr-container", "centrDot");
 displayImg(0, "dark-landing-container", "darkLandingDot");
 displayImg(0, "strides-container", "stridesDot");

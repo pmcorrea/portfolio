@@ -21,6 +21,7 @@ nav {
 	color: var(--unactive);
 	background-color: var(--black);
 	padding: 10px 20px;
+	transition: top 0.2s ease-in;
 
 	.mobile-menu-container {
 		display: flex;

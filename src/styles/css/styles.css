@@ -73,7 +73,7 @@
   align-items: flex-start;
 }
 
-@media only screen and (min-width: 819px) {
+@media only screen and (min-width: 820px) {
   .first-experiance {
     margin-top: 40px;
   }
