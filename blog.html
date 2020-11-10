@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+
+		<meta charset="utf-8" ; http-equiv="Content-Type" content="text/html" />
+		<meta
+			name="description"
+			content="Peter Correa is a Full Stack Developer experianced with React, Node, GraphQL, MongoDB, Postgres, Express and more. "
+		/>
+		<meta
+			name="keywords"
+			content="HTML,CSS,JavaScript,Fullstack Developer, React Developer, Node Developer, Frontend Developer, Backend Developer, Software Engineer, Mobile Developer"
+		/>
+		<meta name="author" content="Peter Correa" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/styles/css/fonts.css" />
+		<link rel="stylesheet" href="src/styles/css/styles.css" />
+		<link rel="stylesheet" href="src/styles/css/navbar.css" />
+		<link rel="stylesheet" href="src/styles/css/elements.css" />
+		<link rel="stylesheet" href="src/styles/css/projects.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/material.min.css"
+		/>
+
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"
+		></script>
+		<title>Peter Correa - Fullstack Software Engineer</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="mobile-menu-container">
+					<ul class="mobile-menu" onclick="showNavMenu()">
+						<li id="bar1"></li>
+						<li id="bar2"></li>
+						<li id="bar3"></li>
+					</ul>
+				</div>
+
+				<ul class="navbar-contact hidden">
+					<!-- email -->
+					<li>
+						<a
+							href="mailto:pmcorrea@me.com?subject=Reaching%20out..."
+							><img src="src/assets/images/email.png" alt=""
+						/></a>
+					</li>
+					<!-- linkedin -->
+					<li>
+						<a
+							href="https://www.linkedin.com/in/petercorrea/"
+							target="_blank"
+							><img src="src/assets/images/linkedin.png" alt=""
+						/></a>
+					</li>
+
+					<!-- github -->
+					<li>
+						<a href="https://github.com/pmcorrea" target="_blank"
+							><img src="src/assets/images/github.png" alt=""
+						/></a>
+					</li>
+				</ul>
+
+				<ul class="navbar-links hidden">
+					<li><a href="#bio" onclick="hideMenu()">bio</a></li>
+					<li>
+						<a href="#projects" onclick="hideMenu()">projects</a>
+					</li>
+					<!-- <li>
+						<a href="#skills" onclick="hideMenu()">skills</a>
+					</li> -->
+					<li>
+						<a href="index.html#experience" onclick="hideMenu()"
+							>experience</a
+						>
+					</li>
+					<li>
+						<a href="./blog.html" onclick="hideMenu()">blog</a>
+					</li>
+					<li>
+						<a href="./afk.html" onclick="hideMenu()">afk</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="blog-main">
+			<div class='blog-head'>
+				<h1>JavaScript: Variables, Types, and Scope</h1>
+				<h4 class="blog-time">Sept 2020</h4>
+			</div>
+
+			<!-- p classes: -->
+				<!-- keyword -->
+				<!-- red-highlight -->
+				<!-- yellow-highlight -->
+				<!-- blog-text -->
+				<!-- terminal -->
+				<!-- bullet-list, bullet, instructions -->
+				<!-- red-highlight -->
+				<!-- red-highlight -->
+			<section class="blog-section">
+				<h2>Variables</h2>
+				<p class="blog-text">
+					When writing code, at times we'll want to retain data to
+					access or manipulate later. Imagine writing a app whose sole
+					responsibility was to add two numbers. It'll be nice, to be
+					able to have two "containers" that would hold the value of
+					each number. The first number could be named num1 and the
+					second as num2.
+				</p>
+			</section>
+
+			<textarea id="editor0" class="code-editors">
+// this is a comment, lets make some variables
+let num1 = 7
+let num2 = 2
+
+// sum now equals 9. 
+let sum = num1 + num2 
+
+// lets change the sum to 10
+sum = 10 </textarea
+			>
+
+			<section class="blog-section">
+				<!-- Delcaring and initializing variables -->
+				<p class="blog-text">Above, we use the command</p>
+				<p class="code">let</p>
+				<p class="blog-text">to</p>
+				<p class="keyword">declare</p>
+				<p class="blog-text">several</p>
+				<p class="keyword">variables</p>
+				<p class="blog-text">and</p>
+				<p class="keyword">initialize</p>
+				<p class="blog-text">
+					their values with 7 and 2. We can then refer to these values
+					in code by their names. In this example we do that to
+					generate their sum. We can also reassign them with different values. Any line with two forward slashes is ignored by the app.
+				We use those lines to write comments. The vertical line of numbers help us keep track of the lines of code.</p></br></br>
+
+				<!-- Types -->
+				<h2>Types</h2>
+				<p class="blog-text">
+					There are several values we can assign to variables. Values are segregated into</p>
+				<p class="keyword">types.</p>
+				<p class="blog-text">
+					Let's list out JavaScript types and examples of values.</p>
+			</section>
+
+			<textarea id="editor1" class="code-editors">
+// strings can includng any alphanumberical character, symbol, or emoji
+let someString = "peter"
+let anotherStrings = "👋"
+
+// numbers can be integers or decimals
+let aNumber = 1
+let anotherNumber = 29.32
+
+// booleans, these can only be true or false...be mindful of the lack of capitalization
+let truthy = true
+let falsey = false
+
+// objects...they're like lookup tables
+let someObject = {
+	"property": "value of any type",
+}
+
+// the [] thing below is also an object called an array
+// think of it as a list of values with corresponding positions called indices
+// 🍎 is at index 0, 🍔 is at index 1, 🍜 is at index 2
+let fruits = [🍎, 🍔, 🍜]
+
+// functions are code snippets that we can reuse over and over
+let addSevenAndNine = function(7, 9) {
+	return 7 + 9
+}
+
+// variables will have a value of undefined if they're initialized with no value
+let aVariableHasNoName // this would be undefined
+
+// square brackets [] are used to access the values of an array
+// we pass in the index we want, index 3 of veggies would equal undefined 
+let veggies = [🥦, 🌽, 🥔]
+let doesNotExist = veggies[3] // this would be undefined
+
+// 'null' is another type used to represent invalid or nonexistent values
+// BigInt, Symbol are all types in JavaScript but we'll return to those later</textarea
+			>
+
+			<section class="blog-section">
+				<h2>Scope</h2>
+				<!-- Scope -->
+				<p class="blog-text">Variables have certain properties to
+					them that determine where and when it's value can be
+					accessed or changed, we call this
+				</p>
+				<p class="keyword">scope.</p>
+				<p class="blog-text">
+					Scope is important becaue it allows us to seperate access to
+					values or data for several reasons including increasing
+					security, decreasing access or visibility, reducing unindented changes and avoiding naming
+					conflicts with other variables. JavaScript has 5 kinds of scope.
+				</p>
+				<ul class="bullet-list">
+					<li>
+						<p class="bullet">1.</p>
+						<p class="instructions">Global Scope</p>
+					</li>
+					<li>
+						<p class="bullet">2.</p>
+						<p class="instructions">Block Scope</p>
+					</li>
+					<li>
+						<p class="bullet">3.</p>
+						<p class="instructions">Function Scope</p>
+					</li>
+					<li>
+						<p class="bullet">4.</p>
+						<p class="instructions">Nested Scopes</p>
+					</li>
+					<li>
+						<p class="bullet">5.</p>
+						<p class="instructions">Lexical Scopes</p>
+					</li>
+				</ul>
+
+				<p class="blog-text">
+					Any variables not within a pair of curly braces 
+				</p>
+				<p class="code">				
+					{}
+				</p>
+				<p class="blog-text">
+					are in the global scope,
+					their values can be accessed from anywhere within the entire file.
+					But values **within** curly braces are 'scoped' to those braces, only accessible from within the braces.
+					We call that block scope. 
+				</p>
+				<p class="code">				
+					console.log()
+				</p>
+				<p class="blog-text">
+					is an instruction that tells the program to print onto the screen
+					whatever you pass inside the parentheses
+				</p>
+				<p class="code">				
+					()
+				</p>
+				<p class="blog-text">	
+					We can use it to print values we want to evaluate. 
+				</p>
+			</section>
+
+			<textarea id="editor2" class="code-editors">
+// global scope, 'global' is accessible from anywhere in the file
+let global = "Im in the global space"
+
+// block scope, 'block' is only accessible from inside the curly braces
+{
+	let block = "Im in the private space"
+	// this would print 'Im in the global space', accessing the global variable
+	console.log(global)
+}
+
+// this would print 'ReferenceError', it can not access the block scoped variable
+console.log(block) 
+
+// variable inside functions are only accessible from within the function's curly braces
+let aFunction = function() {
+	let functionScope = true
+
+	// global varaibles are still accessible
+	console.log(global) 
+
+}
+
+// this would print 'ReferenceError', it can not access the function variable
+console.log(functionScope) </textarea
+			>
+
+		</main>
+
+		<script src="src/scripts/blog.js"></script>
+	</body>
+</html>

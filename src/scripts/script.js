@@ -148,7 +148,6 @@ let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
 	if (window.innerWidth < 720 && window.pageYOffset > 100) {
-		console.log(window.innerWidth);
 		let currentScrollPos = window.pageYOffset;
 		// scrolling down
 		if (prevScrollpos > currentScrollPos) {

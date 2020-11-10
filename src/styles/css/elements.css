@@ -98,4 +98,88 @@ img[src="./images/Compressed/picture99.jpeg"] {
   object-position: 0px -80px;
 }
 
+.blog-main {
+  padding: 5vw;
+}
+.blog-main .blog-section {
+  margin: 20px 0px;
+}
+.blog-main h1 {
+  display: block;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.blog-main .keyword {
+  display: inline;
+  font-weight: 600;
+}
+.blog-main .blog-time {
+  display: inline;
+}
+.blog-main .blog-text {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+.blog-main .yellow-highlight {
+  display: inline;
+  font-weight: 600;
+  background-color: rgba(255, 255, 0, 0.836);
+}
+.blog-main .red-highlight {
+  display: inline;
+  font-weight: 600;
+  background-color: rgba(255, 0, 0, 0.438);
+}
+.blog-main .terminal {
+  display: block;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  width: fit-content;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+.blog-main .code {
+  display: inline;
+  background-color: white;
+  color: #aa1cbd;
+  font-family: monospace;
+  width: fit-content;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+.blog-main .bullet-list {
+  padding: 20px 10vw;
+}
+.blog-main .bullet-list li {
+  display: block;
+  list-style: none;
+}
+.blog-main .bullet-list li .bullet {
+  display: inline;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.blog-main .bullet-list li .instructions {
+  display: inline;
+  font-size: 1rem;
+}
+
+.CodeMirror {
+  display: block;
+  position: relative;
+  left: 0px;
+  width: 100vw;
+  height: fit-content !important;
+  padding: 20px 10vw;
+  line-height: 1.5;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=elements.css.map */
