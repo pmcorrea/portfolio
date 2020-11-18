@@ -1,4 +1,12 @@
-<style>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
 	* {
 		box-sizing: border-box;
 		margin: 0 auto;
@@ -47,7 +55,11 @@
 		width: 100vw;
 		height: 100vh;
 		min-width: 400px;
+		background-image: url('https://www.petercorrea.com/src/assets/images/background.png');
+		background-repeat: repeat-y no-repeat;
 	}
+
+	
 
 	main,
 	header,
@@ -105,8 +117,8 @@
 
 	#background {
 		position: fixed;
-		width: 100%;
-		height: 100%;
+		width: 100vw;
+		height: 100vw;
 		z-index: -1;
 		opacity: 1;
 	}
@@ -133,20 +145,28 @@
 	}
 
 </style>
-
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
 	</head>
-	<body>
-		<div id="background">
-			<img src="https://www.petercorrea.com/src/assets/images/background.png" alt="">
-		</div>
+	<body>	
 		
-		<header>
+	<div style="background-color: #ffffff">
+	<table
+		height="100%"
+		width="100%"
+		cellpadding="0"
+		cellspacing="0"
+		border="0"
+	>
+		<tr>
+			<td
+				valign="top"
+				align="left"
+				style="opacity: 0.5; background-image: url('https://www.petercorrea.com/src/assets/images/background.png'); background-repeat: repeat; background-size: 300px;"
+			>
+			<table >
+
+			<tr>
+				<td>
+					<header>
 			<div id="headshot-container">
 				<img id="headshot-image" src="https://www.petercorrea.com/src/assets/images/headshot.png"/>
 			</div>
@@ -165,8 +185,12 @@
 				</h2>
 			</div>
 		</header>
+				</td>
 
-		<main>
+			</tr>
+			<tr>
+				<td>
+					<main>
 			<div>
 				<h3>Greetings</h3>
 				<p>Hi, I'm Peter! I noticed Apple was hiring software developers and decied to reachout and connect.</p>
@@ -215,8 +239,10 @@
 				
 			</div>
 		</main>
-
-		<footer>
+				</td>
+			</tr>
+			<tr>
+				<td>	<footer>
 			<ul>
 				<li>
 					<a
@@ -239,6 +265,19 @@
 					>
 				</li>
 			</ul>
-		</footer>
+		</footer></td>
+			</tr>
+		</table>
+		
+		</td>
+		</tr>
+
+	</table>
+</div>
+
+
+		
+
+	
 	</body>
 </html>
