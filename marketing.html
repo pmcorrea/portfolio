@@ -3,268 +3,344 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Peter Correa - Software Engineer</title>
 		<style>
-	* {
-		box-sizing: border-box;
-		margin: 0 auto;
-		padding: 0px;
-		text-decoration: none;
-		list-style: none;
-		color: black;
-		font-family: Helvetica, Arial, sans-serif;
-	}
+			* {
+				box-sizing: border-box;
+				margin: 0 auto;
+				padding: 0px;
+				text-decoration: none;
+				list-style: none;
+				color: black;
+				font-family: Helvetica, Arial, sans-serif;
+			}
 
-	html {
-		display: block;
-		font-size: 16px;
-		min-width: 400px;
-		background-position: top left;
-		background-repeat: repeat;
-		background-size: 300px;
-		background-attachment: fixed;
-		background-color: white;
-	}
+			html {
+				display: block;
+				font-size: 16px;
+				background-position: top left;
+				background-repeat: repeat;
+				background-size: 300px;
+				background-attachment: fixed;
+				background-color: white;
+			}
 
-	h1 {
-		font-size: 1.5rem;
-	}
+			h1 {
+				font-size: 1.5rem;
+			}
 
-	h2 {
-		font-size: .8rem;
-	}
+			h2 {
+				font-size: 0.8rem;
+			}
 
-	h3 {
-		font-size: 1.3rem;
-	}
+			h3 {
+				font-size: 1.3rem;
+			}
 
-	p {
-		font-size: 1rem;
-		line-height: 1.5;
-		margin-bottom: 20px;
-	}
+			p {
+				font-size: 1rem;
+				line-height: 1.5;
+				margin-bottom: 20px;
+			}
 
-	.right-justification {
-		text-align: right;
-	}
+			.right-justification {
+				text-align: right;
+			}
 
-	body {
-		display: block;
-		width: 100vw;
-		height: 100vh;
-	}
+			body {
+				display: block;
+				margin: 0;
+				background-color: #ffffff;
+			}
 
-	
+			.wrapper {
+				width: 100%;
+				margin: 0 auto;
+				table-layout: fixed;
+				background-color: #ffffff;
+			}
 
-	main,
-	header,
-	footer {
-		/* border: 2px red dashed; */
-		width: 80vw;
-	}
+			.main-container {
+				width: 100%;
+				margin: 0 auto;
+				max-width: 600px;
+				background-color: #ffffff;
+			}
 
-	header {
-		min-height: 100px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		background-color: black;
-		margin-bottom: 20px;
-		padding: 20px;
-	}
+			main,
+			header,
+			footer {
+				/* border: 2px red dashed; */
+				width: 100%;
+			}
 
-	header div {
-		margin: 0px;
-	}
-	header h1, header h2 {
-		color: white;
-	}
+			header {
+				min-height: 100px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				background-color: black;
+				margin-bottom: 20px;
+				padding: 20px;
+			}
 
-	footer {
-		background-color: black;
-		color: white;
-		min-height: 100px;
+			header div {
+				margin: 0px;
+			}
+			header h1,
+			header h2 {
+				color: white;
+				background-color: transparent;
+				width: fit-content;
+				margin-right: 0;
+				text-align: right;
+			}
 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+			footer {
+				background-color: black;
+				color: white;
+				min-height: 100px;
 
-	footer a {
-		color: white;
-		margin: 0 20px;
-	}
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
 
-	footer ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
+			footer a {
+				color: white;
+				margin: 0 20px;
+			}
 
-		margin: 0 auto;
-	}
+			footer ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
 
-	.keyword {
-		color: red;
-	}
+				margin: 0 auto;
+			}
 
-	#background {
-		position: fixed;
-		width: 100vw;
-		height: 100vw;
-		z-index: -1;
-		opacity: 1;
-	}
+			.keyword {
+				color: red;
+			}
 
-	#headshot-container {
-		width: 100px;
-		height: 100px;
-		overflow: hidden;		
-	}
+			#background {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				opacity: 1;
+			}
 
-		#headshot-image {
-		width: 100px;
-		height: 100px;		
-		object-fit: cover;
-		
-	}
+			#headshot-container {
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
 
-</style>
+			#headshot-image {
+				width: 100px;
+				height: 100px;
+				object-fit: cover;
+			}
+
+			.header-text {
+				width: fit-content;
+			}
+		</style>
 	</head>
-	<body>	
-		
-	<div style="background-color: #ffffff">
-	<table
-		height="100%"
-		width="100%"
-		cellpadding="0"
-		cellspacing="0"
-		border="0"
-	>
-		<tr>
-			<td
-				valign="top"
-				align="left"
-				style="background-image: url('https://www.petercorrea.com/src/assets/images/background.png'); background-repeat: repeat; background-size: 300px; background-attachment: fixed; background-color: #ffffff;"
-			>
-			<table style="width: 100vw; background-color: #ffffffef;">
-
-			<tr>
-				<td>
-					<header>
-			<div id="headshot-container">
-				<img id="headshot-image" src="https://www.petercorrea.com/src/assets/images/headshot.png"/>
+	<body>
+		<div class="wrapper">
+			<div class="main-container">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<header>
+													<div
+														id="headshot-container"
+													>
+														<img
+															id="headshot-image"
+															src="https://www.petercorrea.com/src/assets/images/headshot.png"
+															alt=""
+														/>
+													</div>
+													<div class="header-text">
+														<h1
+															class="right-justification"
+														>
+															I'm your next
+															software engineer
+														</h1>
+														<br />
+														<h2
+															class="right-justification"
+														>
+															React, TypeScript,
+															Node, GraphQL
+														</h2>
+														<h2
+															class="right-justification"
+														>
+															Postgres, Docker,
+															and more.
+														</h2>
+													</div>
+												</header>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<h3>Greetings</h3>
+													<p>
+														Hi, I'm Peter! I noticed
+														Apple was hiring
+														software developers and
+														decied to reachout and
+														connect.
+													</p>
+													<h3>Who I am</h3>
+													<p>
+														As a full-stack software
+														engineer, I work at a
+														product studio designing
+														bespoke solutions for
+														medium and large-sized
+														businesses. Currently I
+														am working as employee
+														No.2 at Bastion Digital
+														where I led efforts in
+														React Development and SE
+														best practices. My role
+														also involves discussing
+														the scope and goal of
+														each solution, sharing
+														the tradeoffs between
+														different
+														implementations,
+														establishing milestones,
+														collaborating with
+														designers, and deploying
+														high-quality code.
+														Ultimately, my role is
+														to improve lives and
+														impact companies through
+														software. Proficient
+														with JavaScript,
+														TypeScript, HTML, SCSS,
+														React, ReactNative,
+														Node, Express, GraphQL,
+														SQL, PostgreSQL,
+														MongoDB, Git/GitHub,
+														Docker, Kubernetes,
+														Webpack, Amazon Web
+														Services, Heroku, and
+														Vercel.
+													</p>
+													<h3>My Background</h3>
+													<p>
+														After completing my
+														degree is business
+														analytics I went to
+														become an operational
+														manager for a big box
+														retailer where I ran a
+														team of 8. My biggest
+														responsibility included
+														rolling out online
+														channels for ordering,
+														curbside pickup, and
+														same day delivery
+														fulfillment. During a
+														search for new and
+														better technology I
+														decided to learn Python
+														and Data Science to help
+														create my own reporting
+														tools. Ultimately I
+														completed a Data Science
+														career track with
+														DataCamp which
+														officially sparked my
+														passion for software! I
+														felt ready for a career
+														change and completed
+														Thinkful's 8 month long
+														software engineering
+														bootcamp.
+													</p>
+													<h3>Away From Keyboard</h3>
+													<p>
+														When I'm not working on
+														products, I'm leading
+														teams, managing talent,
+														and driving operations.
+														I'm an autodidact and a
+														classically trained
+														saxophonist. I have
+														interests in data
+														science 🎲, cryptography
+														🔐, dev ops, language
+														design, complexity
+														theory 📓, minimalism,
+														and enjoy podcasts 🎙.
+														I'm currently leveraging
+														python and scikit-learn
+														to build an image
+														classifier with neural
+														networks and a
+														recommendation engine
+														for matching like users.
+														When not in front of a
+														computer, you can find
+														me meditating 🧘🏻‍♂️,
+														playing off the Omnibook
+														🎷, or out on a run 🏃🏻.
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<footer>
+													<ul>
+														<li>
+															<a
+																href="https://www.petercorrea.com"
+																target="_blank"
+																rel="noopener noreferrer"
+																>Portfolio </a
+															><a
+																href="https://www.github.com/pmcorrea"
+																target="_blank"
+																rel="noopener noreferrer"
+																>GitHub </a
+															><a
+																href="https://www.linkedin.com/in/petercorrea"
+																target="_blank"
+																rel="noopener noreferrer"
+																>LinkedIn
+															</a>
+														</li>
+													</ul>
+												</footer>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-
-			<div>
-				<h1 class="right-justification">
-					I'm your next software engineer
-				</h1>
-			</br>
-				<h2 class="right-justification">
-					React, TypeScript, Node, GraphQL
-				</h2>
-				<h2 class="right-justification">
-					Postgres, Docker, and
-					more.
-				</h2>
-			</div>
-		</header>
-				</td>
-
-			</tr>
-			<tr>
-				<td>
-					<main>
-			<div>
-				<h3>Greetings</h3>
-				<p>Hi, I'm Peter! I noticed Apple was hiring software developers and decied to reachout and connect.</p>
-
-				<h3>Who I am</h3>
-				<p>
-					As a full-stack software engineer, I work at a product
-					studio designing bespoke solutions for medium and
-					large-sized businesses. Currently I am working as employee No.2 at Bastion Digital where I led efforts in 
-					React Development and SE best practices. My role also involves discussing the
-					scope and goal of each solution, sharing the tradeoffs
-					between different implementations, establishing milestones,
-					collaborating with designers, and deploying high-quality
-					code. Ultimately, my role is to improve lives and impact
-					companies through software. Proficient with JavaScript,
-					TypeScript, HTML, SCSS, React, ReactNative, Node, Express,
-					GraphQL, SQL, PostgreSQL, MongoDB, Git/GitHub, Docker,
-					Kubernetes, Webpack, Amazon Web Services, Heroku, and
-					Vercel.
-				</p>
-
-				<h3>My Background</h3>
-				<p>After completing my degree is business analytics I went to become an operational manager for a 
-					big box retailer where I ran a team of 8. My biggest responsibility included rolling out 
-					online channels for ordering, curbside pickup, and same day delivery fulfillment. 
-					During a search for new and better technology I decided to learn Python and Data Science 
-					to help create my own reporting tools. Ultimately I completed a Data Science career track 
-					with DataCamp which officially sparked my passion for software! I felt ready for a career 
-					change and completed Thinkful's 8 month long software engineering bootcamp. 
-				</p>
-
-				<h3>Away From Keyboard</h3>
-				<p>
-					When I'm not working on products, I'm leading teams,
-					managing talent, and driving operations. I'm an autodidact
-					and a classically trained saxophonist. I have interests in
-					data science 🎲, cryptography 🔐, dev ops, language design,
-					complexity theory 📓, minimalism, and enjoy podcasts 🎙. I'm
-					currently leveraging python and scikit-learn to build an
-					image classifier with neural networks and a recommendation
-					engine for matching like users. When not in front of a
-					computer, you can find me meditating 🧘🏻‍♂️, playing off the
-					Omnibook 🎷, or out on a run 🏃🏻.
-				</p>
-
-				
-			</div>
-		</main>
-				</td>
-			</tr>
-			<tr>
-				<td>	<footer>
-			<ul>
-				<li>
-					<a
-						href="https://www.petercorrea.com"
-						target="_blank"
-						rel="noopener noreferrer"
-						>Portfolio</a
-					>
-					<a
-						href="https://www.github.com/pmcorrea"
-						target="_blank"
-						rel="noopener noreferrer"
-						>GitHub</a
-					>
-					<a
-						href="https://www.linkedin.com/in/petercorrea"
-						target="_blank"
-						rel="noopener noreferrer"
-						>LinkedIn</a
-					>
-				</li>
-			</ul>
-		</footer></td>
-			</tr>
-		</table>
-		
-		</td>
-		</tr>
-
-	</table>
-</div>
-
-
-		
-
-	
+		</div>
 	</body>
 </html>
