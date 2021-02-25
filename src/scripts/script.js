@@ -157,6 +157,8 @@ window.onscroll = function () {
 			document.getElementsByTagName("nav")[0].style.top = "-50px";
 		}
 		prevScrollpos = currentScrollPos;
+	} else {
+		document.getElementsByTagName("nav")[0].style.top = "0";
 	}
 };
 
