@@ -19,10 +19,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.618rem;
+  font-size: 3.618rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   margin-top: 50px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -30,7 +31,6 @@ h3 {
   font-size: 1.618rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 10px;
 }
 
 h4 {
@@ -52,7 +52,7 @@ h5 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   color: black;
@@ -63,6 +63,12 @@ a {
   font-size: 1rem;
 }
 
+.bold {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+
 .informational {
   line-height: 1.5;
   margin: 15px 0px;
@@ -70,8 +76,11 @@ a {
 }
 
 .bio-text {
-  margin-top: 30px;
   line-height: 1.5;
+}
+
+.experiance-info > h4:nth-of-type(2) {
+  color: #a7a7a7;
 }
 
 /* Sections */
