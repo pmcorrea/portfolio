@@ -33,13 +33,6 @@
   align-items: flex-start;
 }
 
-.full-width {
-  width: 100%;
-  padding-left: 80px;
-  padding-right: 80px;
-  margin-bottom: 40px;
-}
-
 @media only screen and (min-width: 820px) {
   .first-experiance {
     margin-top: 40px;

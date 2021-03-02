@@ -27,12 +27,6 @@ h2 {
   width: 100%;
 }
 
-.afk-heading {
-  margin: 0;
-  margin-top: 100px;
-  padding-left: 80px;
-}
-
 h3 {
   font-size: 1.618rem;
   font-weight: 300;
@@ -87,6 +81,19 @@ a {
 
 .experiance-info > h4:nth-of-type(2) {
   color: #a7a7a7;
+}
+
+.afk-text {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-top: 180px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.afk-text .afk-heading {
+  margin-top: -30px;
 }
 
 /* Sections */
