@@ -120,21 +120,6 @@
 	margin-bottom: 10px;
 }
 
-.photos-container:first-of-type {
-	margin-top: 100px;
-}
-
-.photos-container {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr;
-	grid-template-rows: 300px 300px 300px;
-	justify-content: space-evenly;
-	align-items: center;
-	margin: 10px auto;
-	row-gap: 10px;
-}
-
 @media only all and (max-width: 819px) {
 	.project-container {
 		max-height: 95vh;

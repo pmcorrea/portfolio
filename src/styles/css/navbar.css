@@ -188,6 +188,10 @@ nav .navbar-links a:hover {
 nav .navbar-links img {
     width: 30px;
   }
+  nav .navbar-contact img.linkedin-contant-img,
+nav .navbar-links img.linkedin-contant-img {
+    width: 40px;
+  }
 }
 #bar1,
 #bar2,

@@ -96,6 +96,12 @@ main {
   max-width: 1200px;
 }
 
+.main-container-photos-page {
+  padding: 0px;
+  margin: 0;
+  max-width: 10000px;
+}
+
 section {
   display: block;
   width: 100%;
